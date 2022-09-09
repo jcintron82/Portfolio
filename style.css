@@ -1,0 +1,229 @@
+html {
+	background-color: #272932;
+}
+
+p {
+	padding: 1vw;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.nameBox {
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	min-height: 10vh;
+	min-width: 90vw;
+	background: linear-gradient(to bottom right, #A30000 50%, whitesmoke 50%);
+	border-radius: 3vw;
+	font-size: 9vw;
+	margin-bottom: 5vw;
+	box-shadow: -6px 8px 9px 1px rgba(0,0,0,0.47);
+	
+}
+#facePic {
+	max-height: 75vh;
+	max-width: 275vw;
+	border-radius: 50%;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5vw;
+	font-size: 32px;
+	
+
+}
+
+@keyframes headerAttributeBox1Animation {
+  0% {margin-right: 0vw;
+     animation-timing-function: ease-in;}
+  25% {margin-right: 20vw;
+     animation-timing-function: ease-in;}
+  50%   {margin-right: 40vw;
+     animation-timing-function: ease-in;}
+  75%   {margin-right: 60vw;
+     animation-timing-function: ease-in;}
+  100% {margin-right: 85vw;
+   	 animation-timing-function: ease-in;
+ 	background-color: #F0FFFF;
+ 	}
+  
+}
+
+.headerAttributeBox1 {
+	display: flex;
+	border-style: solid;
+	border-color: black;
+	width: 100%;
+	padding: 1vw;
+	border-radius: 5vw;
+	justify-content: flex-end;
+	animation-name: headerAttributeBox1Animation;
+  	animation-duration: 1s;
+  	animation-fill-mode: forwards;
+  	
+  	margin: 1.5vw;
+	
+}
+
+@keyframes headerAttributeBox2Animation {
+  0% {margin-right: 0vw;
+     animation-timing-function: ease-in;}
+  25% {margin-right: 10vw;
+     animation-timing-function: ease-in;}
+  50%   {margin-right: 20vw;
+     animation-timing-function: ease-in;}
+  75%   {margin-right: 30vw;
+     animation-timing-function: ease-in;}
+  100% {margin-right: 42.5vw;
+     animation-timing-function: ease-in;
+ 	background-color: #DAEDFB;}
+ 
+
+  
+}
+
+.headerAttributeBox2 {
+	display: flex;
+	border-style: solid;
+	border-color: black;
+	width: 95%;
+	justify-content: flex-end;
+	padding: 1vw;
+	margin: 1.5vw;
+	margin-right: 2vw;
+	border-radius: 5vw;
+	animation-name: headerAttributeBox2Animation;
+  	animation-duration: 1s;
+  	animation-fill-mode: forwards;
+  	
+}
+
+@keyframes headerAttributeBox3Animation {
+  0% {opacity: 0%;
+  	margin-left: -2.5vw;}
+  25% { opacity: 25%;
+  margin-left: -5vw;}
+   50% { opacity: 50%;
+   margin-left: -7.5vw;}
+    75% { opacity: 75%;}
+     100% { opacity: 100%;
+     margin-left: -12vw;}
+ 	}
+
+
+.headerAttributeBox3 {
+	display: flex;
+	border-style: solid;
+	border-color: black;
+	width: 90vw;
+	padding: 1vw;
+	border-radius: 5vw;
+	justify-content: flex-end;
+	animation-name: headerAttributeBox3Animation;
+  	animation-duration: 1s;
+  	animation-fill-mode: forwards;
+  	background-color: #91CAF3;
+
+}
+
+#contactMeBtn {
+	align-self: flex-start;
+	padding: 7vw;
+	margin: 3vw;
+	background-color: #3662D8;
+	color: white;
+	font-size: .7em;
+	font-weight: bold;
+	border-style: none;
+	border-radius: 10rem;
+}
+
+#contactMeBtn:hover, click {
+	background-color: lightblue;
+}
+.selfieContainer {
+	display: flex;
+	flex-direction: column;
+	margin-right: 10vw;
+	font-size: 13vw;
+
+}
+
+#facePic {	
+	min-width: 50vw;
+	max-width: 50vw;
+	align-self: flex-end;
+	border-radius:5vw;
+	box-shadow: -7px -10px 0px -1px #7F106D;
+}
+
+.aboutMeHeaderStyling{
+	padding: 2vw;
+	color: whitesmoke;
+	border-style: solid;
+	border-color: #272932 #272932 white;
+	width: 55vw;
+}
+
+.projectsHeader {
+	border-style: solid;
+	border-color: black;
+	align-content: center;
+	padding: 1vw;
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+}
+
+#pics {
+	
+	max-width: 75vw;
+	border-radius: 10%;
+}
+.newDiv {
+	border-style: solid;
+	border-color: black;
+	padding: 1vw;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 7vw 0 ;
+
+}
+
+.projectLinkWrappers {
+	border-style: solid;
+	border-color: white;
+}
+
+.languageIconContainer{
+	display: inline-flex;
+	border-style: solid;
+	border-color: black;
+	align-items: center;
+	justify-content: center;
+	width: 80vw;
+	font-size: 5vw;
+}
+
+.languageIcons {
+	width: 15vw;
+	height: 15vw;
+	padding: 2vw;
+}
+.contactMeHeader {
+	font-display
+	text-indent: 30vw;
+	padding: 3vw;
+}
+.contactMeContainer {
+	border-style: solid;
+	border-color: black;
+
+
+}
+
