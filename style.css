@@ -1,36 +1,82 @@
 html {
-	background-color: #272932;
+	background-color: #1B1C22;
 }
 
+body { margin:0;
+padding:0 }
 p {
 	padding: 1vw;
 	color: whitesmoke;
 	text-align: center;
 }
 
-.nameBox {
-	display: inline-flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	min-height: 10vh;
-	min-width: 90vw;
-	background: linear-gradient(to bottom right, #A30000 50%, whitesmoke 50%);
+a:link { color: #387780; }  
+
+a:visited { color: purple; }
+
+.initialGreeting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 250vw;
+	min-width: 100vw;
+	background-color: #1B1C22;
 	border-radius: 3vw;
 	font-size: 9vw;
 	margin-bottom: 5vw;
-	box-shadow: -6px 8px 9px 1px rgba(0,0,0,0.47);
 	
 }
+
+@keyframes hi {
+	0% {opacity: 0%;}
+	100%{opacity: 100%}
+  
+}
+
+.hi{
+
+	color: #D32222;
+	background-color: #1B1C22;
+	padding: 1vw;
+	padding-left: 40vw;
+	font-size: 1em;
+	
+  	
+}
+@keyframes nameIntro {
+	0% {opacity: 0%;
+		color: white;}
+	100%{opacity: 100%;
+		color: white;}
+  
+}
+
+.nameIntro {
+
+	color: #1B1C22;
+	background-color: #1B1C22;
+	padding: 1vw;
+	min-height: 20vw;
+	padding-left: 45vw;
+	font-size: 1.1em;
+	animation-name: nameIntro;
+	animation-delay: 2s;
+  	animation-duration: 2s;
+  	animation-fill-mode: forwards;
+}
+
+
 #facePic {
-	max-height: 75vh;
+	max-height: 75vw;
 	max-width: 275vw;
 	border-radius: 50%;
+	margin-top: 8vw;
 }
-.header {
+.attributeAnimations {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 5vw;
+	padding: 7vw;
 	font-size: 32px;
 	
 
@@ -54,17 +100,15 @@ p {
 
 .headerAttributeBox1 {
 	display: flex;
-	border-style: solid;
-	border-color: black;
-	width: 100%;
+	width: 100vw;
 	padding: 1vw;
 	border-radius: 5vw;
 	justify-content: flex-end;
+	margin: 1.5vw;
 	animation-name: headerAttributeBox1Animation;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
   	
-  	margin: 1.5vw;
 	
 }
 
@@ -87,13 +131,10 @@ p {
 
 .headerAttributeBox2 {
 	display: flex;
-	border-style: solid;
-	border-color: black;
-	width: 95%;
+	width: 100vw;
 	justify-content: flex-end;
 	padding: 1vw;
 	margin: 1.5vw;
-	margin-right: 2vw;
 	border-radius: 5vw;
 	animation-name: headerAttributeBox2Animation;
   	animation-duration: 1s;
@@ -116,9 +157,7 @@ p {
 
 .headerAttributeBox3 {
 	display: flex;
-	border-style: solid;
-	border-color: black;
-	width: 90vw;
+	width: 100vw;
 	padding: 1vw;
 	border-radius: 5vw;
 	justify-content: flex-end;
@@ -126,23 +165,46 @@ p {
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
   	background-color: #91CAF3;
+  	margin: 1.5vw;
 
 }
 
-#contactMeBtn {
-	align-self: flex-start;
-	padding: 7vw;
-	margin: 3vw;
-	background-color: #3662D8;
-	color: white;
-	font-size: .7em;
+#greetingBoxBtn {
+	width: 50vw;
+	height: 12vw;
+	padding: 2vw;
+	margin-left: 25vw;
+	border-style: solid;
+	border-color: orange;
+	background-color:  #272932;
+	color: orange;
 	font-weight: bold;
-	border-style: none;
-	border-radius: 10rem;
+	font-size: 1rem;
+	border-radius: 1vw;
+	text-align: center;
+	box-shadow: 0px 11px 14px -7px red;
+	
 }
+
+
 
 #contactMeBtn:hover, click {
 	background-color: lightblue;
+}
+
+.aboutMeHeader{
+	display: flex;
+	background-color: #1B1C22;
+
+}
+.headerBtns {
+	height: 15vw;
+	background-color: #272932;
+	color: white;
+	padding: 2vw;
+	border-style: solid;
+	border-width: .1vw;
+	border-color: #363945 ;
 }
 .selfieContainer {
 	display: flex;
@@ -164,8 +226,9 @@ p {
 	padding: 2vw;
 	color: whitesmoke;
 	border-style: solid;
-	border-color: #272932 #272932 white;
+	border-color: #1B1C22 #1B1C22 white;
 	width: 55vw;
+	font-size: .5em;
 }
 
 .projectsHeader {
@@ -179,41 +242,57 @@ p {
 }
 
 #pics {
-	
+	height: 60vw;
 	max-width: 75vw;
-	border-radius: 10%;
+
+
+	
 }
 .newDiv {
+
 	border-style: solid;
-	border-color: black;
+	border-color: white;
 	padding: 1vw;
 	display: flex;
-	justify-content: space-around;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 7vw 0 ;
+	justify-content: center;
+	margin: 0 7vw 0;
+
 
 }
 
-.projectLinkWrappers {
+.projectInfoContainers {
 	border-style: solid;
 	border-color: white;
+	opacity: .5;
+	align-self: center;
+	margin-bottom: 20vw;
 }
 
 .languageIconContainer{
 	display: inline-flex;
+	flex-direction: column;
 	border-style: solid;
 	border-color: black;
-	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	width: 80vw;
 	font-size: 5vw;
+
+
 }
 
 .languageIcons {
 	width: 15vw;
 	height: 15vw;
 	padding: 2vw;
+
+}
+
+.projectBtns {
+	display: flex;
+	margin-bottom: 3vw;
+
 }
 .contactMeHeader {
 	font-display
