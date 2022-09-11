@@ -10,7 +10,9 @@ p {
 	text-align: center;
 }
 
-a:link { color: #387780; }  
+a:link { color: white; 
+text-decoration: none;
+font-family: sans-serif;}  
 
 a:visited { color: purple; }
 
@@ -18,12 +20,12 @@ a:visited { color: purple; }
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 250vw;
+	min-height: 380vw;
 	min-width: 100vw;
 	background-color: #1B1C22;
 	border-radius: 3vw;
 	font-size: 9vw;
-	margin-bottom: 5vw;
+
 	
 }
 
@@ -227,7 +229,7 @@ a:visited { color: purple; }
 	color: whitesmoke;
 	border-style: solid;
 	border-color: #1B1C22 #1B1C22 white;
-	width: 55vw;
+	width: 45vw;
 	font-size: .5em;
 }
 
@@ -241,27 +243,40 @@ a:visited { color: purple; }
 	font-size: 1.5em;
 }
 
+.projectsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
 #pics {
 	height: 60vw;
 	max-width: 75vw;
+	padding: 1.5vw;
 
 
 	
 }
+
 .newDiv {
 
-	border-style: solid;
-	border-color: white;
+	width: 85vw;
+	border-style: solid none none none;
+	border-color: white black white ;
 	padding: 1vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 0 7vw 0;
+
 
 
 }
-
+.projectDescriptions {
+	color: white;
+	text-align: center;
+	padding: 1.5vw;
+}
 .projectInfoContainers {
 	border-style: solid;
 	border-color: white;
@@ -273,8 +288,6 @@ a:visited { color: purple; }
 .languageIconContainer{
 	display: inline-flex;
 	flex-direction: column;
-	border-style: solid;
-	border-color: black;
 	justify-content: flex-start;
 	width: 80vw;
 	font-size: 5vw;
@@ -289,20 +302,39 @@ a:visited { color: purple; }
 
 }
 
-.projectBtns {
+.projectBtnsContainer {
 	display: flex;
-	margin-bottom: 3vw;
+	flex-direction: column;
+	color: white;
+	text-align: left;
+}
 
+
+.linkDivs{
+	color: white;
+	border-style: solid;
+	border-color: #FF2E00 #1B1C22;
+	padding: 2vw;
+	margin: 1vw;
+	align-self: flex-end;
 }
 .contactMeHeader {
-	font-display
+	border-style: solid;
+	border-color: white;
+	width: 100vw;
 	text-indent: 30vw;
 	padding: 3vw;
+	color: white;
 }
 .contactMeContainer {
 	border-style: solid;
-	border-color: black;
-
-
+	border-color: white;
+	color: white;
 }
 
+.contactMeForm {
+	display: grid;
+	border-style: solid;
+	border-color: white;
+	justify-content: center;
+}
