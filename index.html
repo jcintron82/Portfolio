@@ -15,11 +15,11 @@
       
 
     <div class="attributeAnimations">
-     <div class="headerAttributeBox1">Developer.</div>
-     <div class="headerAttributeBox2">Developer.</div>
-     <div class="headerAttributeBox3">Developer.</div>
+     <div class="headerAttributeBox1">Designer.</div>
+     <div class="headerAttributeBox2">Programmer.</div>
+     <div class="headerAttributeBox3">Web Developer.</div>
   </div>
-  <button type="button" id="greetingBoxBtn">Enter</button>
+  <a href="#aboutMe"><button type="button" id="greetingBoxBtn">Enter</button></a>
   </div>
  </section>
 
@@ -27,24 +27,30 @@
   <body id="body">
     <section id="aboutMe">
       <header class="aboutMeHeader"> 
-       <button type="button" id="homeBtn" class="headerBtns">Home</button> 
-       <button type="button" id="aboutMeBtn" class="headerBtns">About me</button>
-       <button type="button" id="myWorkBtn" class="headerBtns">My work</button>
-       <button type="button" id="contactMeBtn" class="headerBtns"> Contact me </button>
+       <a href="#header"><button type="button" id="homeBtn" class="headerBtns">Home</button> </a>
+       <a href="#aboutMe"> <button type="button" id="aboutMeBtn" class="headerBtns">About me</button></a>
+       <a href="#projects"><button type="button" id="myWorkBtn" class="headerBtns">My work</button></a>
+       <a href="#contact"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact me </button></a>
       
        
        </header>
-    <div class="selfieContainer">
+    <div class="selfieContainer" id="aboutMe">
     <img id="facePic" src="selfiee.jpg" alt="stock image"><div class="aboutMeHeaderStyling">About <br>me:</div>
    </div>
-   <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p></section>
+   <p> I'm a motivated programmer with a health interest in full stack web development. I have experience building full scale interactive websites and software programs. Whether you're looking to build a website for your customers or a software to make your life easier, I'm here to help :) 
+   See a list of my relevent skills and knowledge base below: </p>
+   <div class="skillBubblesContainer"> <div class="skillBubbles">Java-<br>script</div> <div class="skillBubbles">Html</div>
+   <div class="skillBubbles">CSS</div> <div class="skillBubbles">Git</div> <div class="skillBubbles">Figma</div>
+ </div>
+
+ </section>
 
    <section id="projects">
    <div class="projectsHeader"> My work </div>
 
 <div class="projectsContainer">
     <div class="newDiv"><img id="pics" src="travelSS.jpg" alt="stock image">
-    <div class="languageIconContainer"><div class="projectDescriptions">hi<br>
+    <div class="languageIconContainer"><div class="projectDescriptions">A travel booking Website<br>
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
@@ -52,7 +58,7 @@
       </div>
 
     <div class="newDiv"><img id="pics" src="travelSS.jpg" alt="stock image">
-    <div class="languageIconContainer"><div class="projectDescriptions">hi<br>
+    <div class="languageIconContainer"><div class="projectDescriptions">Pokemon Tic Tac Toe<br>
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
@@ -60,7 +66,7 @@
       </div>
 
     <div class="newDiv"><img id="pics" src="travelSS.jpg" alt="stock image">
-    <div class="languageIconContainer"><div class="projectDescriptions">hi<br>
+    <div class="languageIconContainer"><div class="projectDescriptions">Velgara Excavating<br>
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
@@ -68,7 +74,7 @@
       </div>
 
     <div class="newDiv"><img id="pics" src="travelSS.jpg" alt="stock image">
-    <div class="languageIconContainer"><div class="projectDescriptions">hi<br>
+    <div class="languageIconContainer"><div class="projectDescriptions">Luxe Cosmetic Studio<br>
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
@@ -79,19 +85,20 @@
 
         
   <section id="contact">
-    <header class="contactMeHeader"> Contact me <button id="toTopBtn"> Top </button> 
+    <header class="contactMeHeader"> Contact me <a href="#header"><button id="toTopBtn"> Top </button></a>
     </header><div class="contactMeContainer">
      If you like my work, fill out the form below and shoot me an email. Let's chat!
     
      
       </div>
         <form class="contactMeForm">
-          <label>name</label>
-          <input></input>
-          <label>name</label>
-          <input></input>
-          <label>name</label>
-          <input></input>
+          <label>Name</label>
+          <input type="name"></input>
+          <label>E-mail</label>
+          <input type="email"></input>
+          <label>Message</label>
+          <input type="text"></input>
+          <button type="submit" id="contactMeSubmitBtn"> Submit </button>
           </form>
 
 
