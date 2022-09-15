@@ -22,11 +22,12 @@ a:visited { color: purple; }
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 300vw;
+	min-height: 100vh;
 	min-width: 100vw;
 	background-color: #1B1C22;
 	border-radius: 3vw;
 	font-size: 9vw;
+	margin-bottom: 10vh;
 
 	
 }
@@ -197,6 +198,7 @@ a:visited { color: purple; }
 	background-color: #1B1C22;
 	width: 100vw;
 	margin-left: 3vw;
+	margin-top: ;
 
 }
 .headerBtns {
@@ -236,22 +238,69 @@ a:visited { color: purple; }
 
 .skillBubblesContainer {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-style: solid;
-	border-color: white;
 	color: white;
 	height: 85vw;
 	width: 100vw;
+	flex-direction: column-reverse;
+	margin-left: 3.2vw;
+
 }
 
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(15vw, 20vw); }
-    100%   { transform: translate(0, -0px); }   
+.skillsPyramidBtm {
+	display: flex;
+	width: 100vw;
+	height: 15vw;
+	justify-content: center;
+	margin-bottom: 3vw;
 }
 
-.skillBubbles {
+.htmlSkillBubble {
+	width: 50vw;
+	height: 6vh;
+		background-color: lightcoral;
+
+}
+
+.CSSSkillBubble {
+		width: 50vw;
+	height: 6vh;
+	background-color: lightslategray;
+
+}
+
+.skillsPyramidTier2 {
+	display: block;
+	height: 5vh;
+
+}
+
+
+.jsSkillBubble {
+	display: flex;
+	width: 97.75vw;
+	height: 20vw;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw;
+	background-color: lightblue;
+
+}
+
+
+
+
+.skillsPyramidTier3 {
+	display: flex;
+	background-color: lightcoral;
+	height: 25vh;
+	align-items: flex-end;
+}
+
+
+
+
+
+.gitSkillBubble {
 	display: flex;
 	border-style: solid;
 	border-color: whitesmoke;
@@ -261,10 +310,26 @@ a:visited { color: purple; }
 	justify-content: center;
 	align-items: center;
 	padding: 1vw;
-	animation: floating 10s ease-in infinite;
 
 
 }
+
+
+.figmaSkillBubble {
+	display: flex;
+	border-style: solid;
+	border-color: whitesmoke;
+	border-radius: 50vw;
+	width: 17vw;
+	height: 17vw;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw;
+
+
+}
+
+
 .projectsHeader {
 	border-style: solid none none;
 	border-color: white;
@@ -274,6 +339,7 @@ a:visited { color: purple; }
 	color: white;
 	font-size: 1.5em;
 	margin-left: 52vw;
+	margin-top: 10vw;
 	
 }
 
@@ -355,6 +421,7 @@ a:visited { color: purple; }
 	border-color: white;
 	border-width: 1vw;
 	width: 90vw;
+ 	padding-bottom: 1vh;
 
 
 
@@ -385,7 +452,8 @@ a:visited { color: purple; }
 	border-color: white;
 	color: white;
 	text-align: center;
-	padding: 1vw;
+	padding: 4vw;
+	width: 100vw;
 }
 
 #toTopBtn {
