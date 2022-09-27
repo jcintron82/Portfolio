@@ -16,7 +16,9 @@ a:link { color: white;
 text-decoration: none;
 font-family: sans-serif;}  
 
-a:visited { color: purple; }
+a:visited { color: white; }
+
+
 
 .initialGreeting {
 	display: flex;
@@ -39,12 +41,11 @@ a:visited { color: purple; }
 }
 
 .hi{
-
 	color: #D32222;
 	background-color: #1B1C22;
 	padding: 1vw;
 	padding-left: 40vw;
-	font-size: 1em;
+	font-size: 1.25em;
 	
   	
 }
@@ -71,12 +72,7 @@ a:visited { color: purple; }
 }
 
 
-#facePic {
-	max-height: 75vw;
-	max-width: 275vw;
-	border-radius: 50%;
-	margin-top: 10vw;
-}
+
 .attributeAnimations {
 	display: flex;
 	flex-direction: column;
@@ -98,7 +94,7 @@ a:visited { color: purple; }
      animation-timing-function: ease-in;}
   100% {margin-right: 85vw;
    	 animation-timing-function: ease-in;
- 	background-color: #F0FFFF;
+ 	background-color: #A3148C;
  	}
   
 }
@@ -128,7 +124,7 @@ a:visited { color: purple; }
      animation-timing-function: ease-in;}
   100% {margin-right: 42.5vw;
      animation-timing-function: ease-in;
- 	background-color: #DAEDFB;}
+ 	background-color: #91127C;}
  
 
   
@@ -169,7 +165,7 @@ a:visited { color: purple; }
 	animation-name: headerAttributeBox3Animation;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
-  	background-color: #91CAF3;
+  	background-color: #7F106D;
   	margin: 1.5vw;
 
 }
@@ -178,7 +174,7 @@ a:visited { color: purple; }
 	width: 50vw;
 	height: 12vw;
 	padding: 2vw;
-	margin-left: 25vw;
+	margin-left: 30vw;
 	border-style: solid;
 	border-color: orange;
 	background-color:  #272932;
@@ -224,6 +220,7 @@ a:visited { color: purple; }
 	max-width: 50vw;
 	align-self: flex-end;
 	border-radius:5vw;
+	margin-top: 10vw;
 	box-shadow: -7px -10px 0px -1px #7F106D;
 }
 
@@ -239,6 +236,7 @@ a:visited { color: purple; }
 .skillBubblesContainer {
 	display: flex;
 	color: white;
+	box-shadow:  -2px 11px 13px -6px white;
 	height: 85vw;
 	width: 100vw;
 	flex-direction: column-reverse;
@@ -255,22 +253,34 @@ a:visited { color: purple; }
 }
 
 .htmlSkillBubble {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 50vw;
 	height: 6vh;
-		background-color: lightcoral;
+	background-color: #283618;
+	border-bottom-left-radius: 5vw;
+
 
 }
 
 .CSSSkillBubble {
-		width: 50vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
 	height: 6vh;
-	background-color: lightslategray;
+	background-color: #3581B8;
+	border-bottom-right-radius: 5vw;
+
 
 }
 
 .skillsPyramidTier2 {
-	display: block;
-	height: 5vh;
+	display: flex;
+	min-height: 5vh;
+	background-color: #343434;
+	align-items: center;
 
 }
 
@@ -282,7 +292,7 @@ a:visited { color: purple; }
 	justify-content: center;
 	align-items: center;
 	padding: 1vw;
-	background-color: lightblue;
+	background-color: #D32222;
 
 }
 
@@ -291,9 +301,12 @@ a:visited { color: purple; }
 
 .skillsPyramidTier3 {
 	display: flex;
-	background-color: lightcoral;
+	background-color: #24262E;
 	height: 25vh;
 	align-items: flex-end;
+	border-top-left-radius: 5vw;
+	border-top-right-radius: 5vw;
+
 }
 
 
@@ -303,13 +316,16 @@ a:visited { color: purple; }
 .gitSkillBubble {
 	display: flex;
 	border-style: solid;
-	border-color: whitesmoke;
+	border-color: #7F106D;
 	border-radius: 50vw;
-	width: 17vw;
-	height: 17vw;
+	width: 19vw;
+	height: 19vw;
 	justify-content: center;
 	align-items: center;
 	padding: 1vw;
+	border-width: 2vw;
+	margin-bottom: 1vh;
+
 
 
 }
@@ -318,14 +334,15 @@ a:visited { color: purple; }
 .figmaSkillBubble {
 	display: flex;
 	border-style: solid;
-	border-color: whitesmoke;
+	border-color: #7F106D;
 	border-radius: 50vw;
-	width: 17vw;
-	height: 17vw;
+	width: 19vw;
+	height: 19vw;
 	justify-content: center;
 	align-items: center;
 	padding: 1vw;
-
+	border-width: 2vw;
+	margin-bottom: 1vh;
 
 }
 
@@ -437,6 +454,7 @@ a:visited { color: purple; }
 	align-self: flex-end;
 }
 .contactMeHeader {
+	font-size: 1.75em;
 	display: flex;
 	justify-content: space-evenly;
 	border-style: none none solid;
@@ -448,25 +466,32 @@ a:visited { color: purple; }
 
 }
 .contactMeContainer {
-	border-style: solid;
-	border-color: white;
+	font-size: 1.2em ;
 	color: white;
 	text-align: center;
 	padding: 4vw;
 	width: 100vw;
 }
 
-#toTopBtn {
+.toTopBtn {
 	width: 25vw;
-	height: 10vw;
+	height: 25vw;
 	align-self: flex-end;
-	margin-left: 34vw;
+	border-radius: 50%;
+	margin-left: 30vw;
+	border-style: solid;
+	border-color: red;
+	border-width: .2rem;
+	background-color:#1B1C22;
+	color: white;
+	font-size: .65em;
+
 }
+
+
 
 .contactMeForm {
 	display: grid;
-	border-style: solid;
-	border-color: white;
 	justify-content: center;
 }
 
@@ -479,27 +504,30 @@ input {
 	height: 10vw;
 	margin: 2vw 0 1.5vw 0;
 }
-input[type=text] {
+textarea {
 	height: 20vw;
 	margin-bottom: 4vw;
 
 }
 
+
 #contactMeSubmitBtn {
-	width: 70vw;
+	width: 35vw;
 	height: 15vw;
 	margin-bottom: 3vw;
 	border-radius: 1.5vw;
+	margin-left: 40vw;
 }
 .socialLinks {
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	justify-content: space-evenly;
-	border-style: solid;
-	border-color: white;
 	color: white;
-	height: 20vw;
+	height: 25vw;
+	width: 107vw;
+	border-style: solid none none;
+	border-style: white;
 }
 
 svg {
@@ -513,4 +541,20 @@ svg {
 	height: 15vw;
 	width: 20vw;
 
+}
+
+
+@media (min-width: 700px) {
+	.initialGreeting {
+		font-size: 5em;
+	}
+	.attributeAnimations {
+		padding: 0 ;
+	}
+	.nameIntro {
+		padding-left: 0;
+		min-height: .5vh;
+		text-indent: 45vw;
+
+	}
 }
