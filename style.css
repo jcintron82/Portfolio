@@ -2,6 +2,13 @@ html {
 	background-color: #1B1C22;
 	scroll-behavior: smooth;
 
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+
 }
 
 body { margin:0;
@@ -16,7 +23,8 @@ a:link { color: white;
 text-decoration: none;
 font-family: sans-serif;}  
 
-a:visited { color: white; }
+a:visited { color: white;
+width: 25%; }
 
 
 
@@ -62,13 +70,14 @@ a:visited { color: white; }
 	color: #1B1C22;
 	background-color: #1B1C22;
 	padding: 1vw;
-	min-height: 20vw;
-	padding-left: 45vw;
+	margin-bottom: 3vw;
+	text-indent: 45vw;
 	font-size: 1.1em;
 	animation-name: nameIntro;
 	animation-delay: 1s;
   	animation-duration: 3s;
   	animation-fill-mode: forwards;
+
 }
 
 
@@ -134,7 +143,7 @@ a:visited { color: white; }
 	display: flex;
 	width: 92vw;
 	justify-content: flex-end;
-	padding: 1.5vw;
+	padding: 1vw;
 	margin: 1.5vw;
 	border-radius: 5vw;
 	animation-name: headerAttributeBox2Animation;
@@ -170,11 +179,14 @@ a:visited { color: white; }
 
 }
 
+/*
 #greetingBoxBtn {
+	position: absolute;
+	margin-top: 100vw;
+	align-self: flex-start;
 	width: 50vw;
 	height: 12vw;
 	padding: 2vw;
-	margin-left: 30vw;
 	border-style: solid;
 	border-color: orange;
 	background-color:  #272932;
@@ -185,16 +197,15 @@ a:visited { color: white; }
 	text-align: center;
 	box-shadow: 0px 11px 14px -7px red;
 	
-}
+}*/
 
 
 
 .aboutMeHeader{
 	display: flex;
-	background-color: #1B1C22;
-	width: 100vw;
-	margin-left: 3vw;
-	margin-top: ;
+	color: white;
+	font-size: 2em;
+	justify-content: center;
 
 }
 .headerBtns {
@@ -204,18 +215,24 @@ a:visited { color: white; }
 	padding: 2vw;
 	border-style: solid;
 	border-width: .1vw;
-	border-color: #363945 ;
-	width: 25vw;
+	border-color: #363945;
+	width: 100%;
+
 }
+
+.x {
+	width: 25%;
+}
+
 .selfieContainer {
 	display: flex;
 	flex-direction: column;
 	margin-right: 10vw;
-	font-size: 13vw;
+
 
 }
 
-#facePic {	
+.facePic {	
 	min-width: 50vw;
 	max-width: 50vw;
 	align-self: flex-end;
@@ -229,7 +246,7 @@ a:visited { color: white; }
 	color: whitesmoke;
 	border-style: solid;
 	border-color: #1B1C22 #1B1C22 white;
-	width: 50vw;
+	width: 50%;
 	font-size: .5em;
 }
 
@@ -302,7 +319,7 @@ a:visited { color: white; }
 .skillsPyramidTier3 {
 	display: flex;
 	background-color: #24262E;
-	height: 25vh;
+	height: 100vh;
 	align-items: flex-end;
 	border-top-left-radius: 5vw;
 	border-top-right-radius: 5vw;
@@ -348,14 +365,14 @@ a:visited { color: white; }
 
 
 .projectsHeader {
+	align
 	border-style: solid none none;
 	border-color: white;
-	width: 51vw;
+	width: 80%;
 	padding: 2vw;
 	text-align: left;
 	color: white;
 	font-size: 1.5em;
-	margin-left: 52vw;
 	margin-top: 10vw;
 	
 }
@@ -425,7 +442,7 @@ a:visited { color: white; }
 	width: 15vw;
 	height: 15vw;
 	padding: 2vw;
-	padding-top: 3.5vw;
+
 
 }
 
@@ -433,7 +450,7 @@ a:visited { color: white; }
 	display: flex;
 	flex-direction: column;
 	color: white;
-	text-align: left;
+	text-align: center;
 	border-style: none none solid;
 	border-color: white;
 	border-width: 1vw;
@@ -452,14 +469,18 @@ a:visited { color: white; }
 	padding: 2vw;
 	margin: 1vw;
 	align-self: flex-end;
+	margin-right: 3vw;
+	
 }
 .contactMeHeader {
 	font-size: 1.75em;
 	display: flex;
 	justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
 	border-style: none none solid;
 	border-color: white;
-	width: 100vw;
+
 	padding: 3vw;
 	color: white;
 
@@ -470,7 +491,7 @@ a:visited { color: white; }
 	color: white;
 	text-align: center;
 	padding: 4vw;
-	width: 100vw;
+	
 }
 
 .toTopBtn {
@@ -484,7 +505,7 @@ a:visited { color: white; }
 	border-width: .2rem;
 	background-color:#1B1C22;
 	color: white;
-	font-size: .65em;
+	font-size: .5em;
 
 }
 
@@ -525,7 +546,6 @@ textarea {
 	justify-content: space-evenly;
 	color: white;
 	height: 25vw;
-	width: 107vw;
 	border-style: solid none none;
 	border-style: white;
 }
@@ -543,18 +563,344 @@ svg {
 
 }
 
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*@media (min-width: 700px max-width: 1675px) {
+	p {
+		color: red;
+	}
+}
+*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
 
 @media (min-width: 700px) {
 	.initialGreeting {
 		font-size: 5em;
+
 	}
 	.attributeAnimations {
 		padding: 0 ;
 	}
 	.nameIntro {
-		padding-left: 0;
-		min-height: .5vh;
+		padding: 0;
+	
 		text-indent: 45vw;
+		font-size: .75em;
 
 	}
+	.hi {
+		display: inline-flex;
+		padding: 0;
+		text-indent: 40vw;
+		font-size: 1em;
+		min-height: 20vh;
+	}
+
+
+.headerBtns{
+	font-size: .55em;
+	max-width: 25%;
+	min-height: .5rem;
+	max-height: .6rem;
+	background-color: #1B1C22;
+	color: white;
+	padding: 2vw;
+	border-style: none none solid;
+	border-width: .1vw;
+	border-color: white;
+	
 }
+
+.headerBtns:hover {
+	cursor: pointer;
+}
+
+ .selfieContainer {
+ 	flex-direction: row-reverse;
+ 
+ 	justify-content: space-between;
+}
+
+
+.facePic {
+
+	min-width: 20rem;
+	max-height: 20rem;
+	border-radius:50%;
+	box-shadow: none;
+	margin-bottom: 20vh;
+	margin-top: 0;
+	/*margin-left: 10vw;*/
+
+	}
+
+   .aboutMeBlurbWrap {
+   	min-width: 10rem;
+		min-height: 25rem;
+		max-width: 50vw;
+		max-height: 25rem;
+   	background-color: darkgrey;
+   	/*margin-left: 21.5vw;*/
+   	border-radius: 10%;
+
+
+
+   }
+
+	p {
+		display: inline;
+		flex-grow: 1;
+		font-size: 1.2em;
+		
+		padding: 2vw;
+	}
+/*@media (min-width: 1150px ) {
+	p {
+		font-size: 20px;
+	}
+}*/
+
+.skillsPyramidTier3 {
+	display: flex;
+	background-color: #24262E;
+	height: 100vh;
+	align-items: flex-end;
+	border-top-left-radius: 5vw;
+	border-top-right-radius: 5vw;
+
+ }
+
+	.skillBubblesContainer {
+	display: flex;
+	color: white;
+	box-shadow:  -2px 11px 13px -6px white;
+	height: 75vw;
+	width: 90vw;
+	flex-direction: column-reverse;
+	margin-right: 22vw;
+	}
+
+.jsSkillBubble {
+	display: flex;
+	width: 97.75vw;
+	height: 15vw;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw;
+	background-color: #D32222;
+
+}
+.attributeAnimations {
+	display: inline-flex;
+	font-size: 32px;
+	max-height: 80vh;
+
+}
+.headerAttributeBox1, .headerAttributeBox2, .headerAttributeBox3 {
+max-height: 10rem;
+margin: 1vw;
+font-size: 1.5em;
+text-align: center;
+margin-bottom: 1rem;
+width: 100%;
+
+
+}
+@keyframes headerAttributeBox1Animation {
+0% {opacity: 0%;
+  	margin-right: -2.5vw;}
+  25% { opacity: 25%;
+  margin-right: -5vw;}
+   50% { opacity: 50%;
+   margin-right: -7.5vw;}
+    75% { opacity: 75%;}
+     100% { opacity: 100%;
+     margin-right: 65vw;
+  background-color: #A3148C;}
+ 	}
+
+ 	@keyframes headerAttributeBox2Animation {
+   0% {opacity: 0%;
+  	margin-right: -2.5vw;}
+  25% { opacity: 25%;
+  margin-right: -5vw;}
+   50% { opacity: 50%;
+   margin-right: -7.5vw;}
+    75% { opacity: 75%;}
+     100% { opacity: 100%;
+     margin-right: 50vw;
+  background-color: #A3148C;}
+ 	}
+
+ 	@keyframes headerAttributeBox3Animation {
+  0% {opacity: 0%;
+  	margin-right: -2.5vw;}
+  25% { opacity: 25%;
+  margin-right: -5vw;}
+   50% { opacity: 50%;
+   margin-right: -7.5vw;}
+    75% { opacity: 75%;}
+     100% { opacity: 100%;
+     margin-right: 35vw;
+  background-color: #A3148C;}
+ 	}
+/*#greetingBoxBtn {
+	margin-top:0;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	padding: 2vw;
+	border-style: solid;
+	border-color: orange;
+	background-color:  #272932;
+	color: orange;
+	font-weight: bold;
+	font-size: 1rem;
+	box-shadow: 0px 11px 14px -7px red;
+	
+	
+}*/
+.projectsHeader {
+	font-size: 2em;
+}
+#pics {
+	max-height: 25vw;
+	min-width:50vw;
+	padding: 1.5vw;
+	margin-left: 0;
+}
+.projectDescriptions{
+	font-size: .5em;
+	color: white;
+	text-align: center;
+	padding: 1.5vw;
+	margin-left: 0vw;
+}
+.languageIcons{
+	width:4vw;
+	height: 4vw;
+	padding: .7rem, .35rem;
+}
+.projectBtnsContainer{
+	font-size: .5em;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	border-style: none none solid;
+	border-color: white;
+	border-width: 1vw;
+ 	padding-bottom: 1vh;
+}
+.projectBlurbs {
+	font-size: .75em;
+	text-align: center;
+	max-width:75vw ;
+}
+
+
+.linkDivs{
+	color: white;
+	border-style: solid;
+	border-color: #FF2E00 #1B1C22;
+	padding: 1vw;
+	margin: 1vw;
+	align-self: flex-end;
+	margin-right: 3vw;
+	font-size: .5em;
+}
+
+
+
+.contactMeHeader {
+	text-align: left;
+	font-size: 2.5em;
+	display: flex;
+	justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
+	border-style: none none solid;
+	border-color: white;
+	padding: 3vw;
+	color: white;
+
+
+}
+.toTopBtn {
+	width: 20vw;
+	height: 7vw;
+	align-self: flex-end;
+	border-radius: 20px;
+	margin-left: 30vw;
+	border-style: solid;
+	border-color: red;
+	border-width: .2rem;
+	background-color:#1B1C22;
+	color: white;
+	font-size: .65em;
+
+}
+.contactMeContainer {
+	font-size: 1.75em;
+	text-align: center;
+}
+.contactMeForm {
+
+}
+input {
+	font-size: 1.5em;
+	height: 5vw;
+	margin: 2vw 0 1.5vw 0;
+	
+}
+textarea {
+	font-size: 1.25em;
+	height: 20vw;
+	width: 40vw;
+	margin-bottom: 3vw;
+	
+}
+
+
+
+#contactMeSubmitBtn {
+	width: 41vw;
+	height: 5vw;
+	margin-bottom: 3vw;
+	border-radius: 1.5vw;
+	margin-left: 0vw;
+}
+.socialLinks{
+	height: 110%;
+}
+svg {
+	height: 100px;
+	width: 100px;
+	padding: 1vw;
+}
+
+.githubIcon {
+	height: 100px;
+	width: 100px;
+	padding: 1vw;
+
+}
+
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}*/
+

@@ -10,7 +10,7 @@
   </head>
   <section id="header">
    <div class="initialGreeting">
-    <div class="hi">Hi!</div>
+    <div class="hi">Hi!  <a href="#aboutMe"><button type="button" id="greetingBoxBtn">Enter</button></a></div>
     <div class="nameIntro">I'm Juan.</div>
       
 
@@ -18,8 +18,8 @@
      <div class="headerAttributeBox1">Designer.</div>
      <div class="headerAttributeBox2">Programmer.</div>
      <div class="headerAttributeBox3">Web Developer.</div>
-  </div>
-  <a href="#aboutMe"><button type="button" id="greetingBoxBtn">Enter</button></a>
+
+ 
   </div>
  </section>
 
@@ -27,19 +27,23 @@
   <body id="body">
     <section id="aboutMe">
       <header class="aboutMeHeader"> 
-       <a href="#header"><button type="button" id="homeBtn" class="headerBtns">Home</button> </a>
-       <a href="#aboutMe"> <button type="button" id="aboutMeBtn" class="headerBtns">About me</button></a>
-       <a href="#projects"><button type="button" id="myWorkBtn" class="headerBtns">My work</button></a>
-       <a href="#contact"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact me </button></a>
+       <a href="#header" class="x"><button type="button" id="homeBtn" class="headerBtns">Home</button> </a>
+       <a href="#aboutMeBlurb" class="x"> <button type="button" id="aboutMeBtn" class="headerBtns">About me</button></a>
+       <a href="#projects" class="x"><button type="button" id="myWorkBtn" class="headerBtns">My work</button></a>
+       <a href="#contact" class="x"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact me </button></a>
       
        
        </header>
+       <section id="aboutMeBlurb">
     <div class="selfieContainer" id="aboutMe">
-    <img id="facePic" src="./images/selfiee.jpg" alt="self photo"><div class="aboutMeHeaderStyling">About <br>me:</div>
-   </div>
-   <p> I'm a motivated programmer with a healthy interest in full stack web development. I have experience building full scale interactive websites and software programs. Whether you're looking to build a website for your customers or a software to make your life easier, I'm here to help :) 
-   See a list of my relevent skills and knowledge base below: </p>
-   <div class="skillBubblesContainer">
+    
+   <div class="aboutMeBlurbWrap"><h1 class="aboutMeBlurbHeader"> About me: </h1> <p> 
+   I'm a motivated programmer with a healthy interest in full stack web development. I have experience building full scale interactive websites and software programs. Whether you're looking to build a website for your customers or a software to make your life easier, I'm here to help :) 
+   See a list of my relevent skills and knowledge base below:</p>
+ </div><img  class="facePic" src="./images/selfiee.jpg" alt="self photo"></div>
+
+
+  <!--  <div class="skillBubblesContainer">
    <div class="skillsPyramidBtm"> <div class="htmlSkillBubble">HTML</div> <div class="CSSSkillBubble">CSS</div></div>
   
 
@@ -48,7 +52,7 @@
   <div class="skillsPyramidTier3">
     <div class="gitSkillBubble">Git</div> <div class="figmaSkillBubble">Figma</div>
   </div>
-     </div>
+     </div> -->
 
  </section>
 
@@ -61,7 +65,7 @@
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-    <div class="projectBtnsContainer">This is a landing page/menu I created for a food truck using HTML/CSS and Javascript with Webpack as a compiler. Check it out to make your stomach rumble!<div class="linkDivs"><a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-"> Git Repo</a></div></div>
+    <div class="projectBtnsContainer"><p class="projectBlurbs">This is a landing page/menu I created for a food truck using HTML/CSS and Javascript with Webpack as a compiler. Check it out to make your stomach rumble!</p><div class="linkDivs"><a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-"> Git Repo</a></div></div>
       </div>
 
     <div class="newDiv"><img id="pics" src="./images/librarySS.jpg" alt="stock image">
@@ -69,7 +73,7 @@
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-    <div class="projectBtnsContainer">This is an online library I created using HTML/CSS and Javascript. It is a fully functional library which can keep track of books you have read/are reading. <div class="linkDivs"><a href="https://jcintron82.github.io/Online-Library/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/Online-Library"> Git Repo</a></div></div>
+    <div class="projectBtnsContainer"><p class="projectBlurbs">This is an online library I created using HTML/CSS and Javascript. It is a fully functional library which can keep track of books you have read/are reading.</p> <div class="linkDivs"><a href="https://jcintron82.github.io/Online-Library/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/Online-Library"> Git Repo</a></div></div>
       </div>
 
     <div class="newDiv"><img id="pics" src="./images/etchSS.jpg" alt="stock image">
@@ -77,7 +81,7 @@
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-    <div class="projectBtnsContainer">An Etch-A-Sketch created using HTML/CSS and Javascript. Use it and let your imagination run free!<div class="linkDivs"><a href="https://jcintron82.github.io/etch-a-sketch/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/etch-a-sketch"> Git Repo</a></div></div>
+    <div class="projectBtnsContainer"><p class="projectBlurbs">An Etch-A-Sketch created using HTML/CSS and Javascript. Use it and let your imagination run free!</p><div class="linkDivs"><a href="https://jcintron82.github.io/etch-a-sketch/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/etch-a-sketch"> Git Repo</a></div></div>
       </div>
 
    
@@ -86,7 +90,7 @@
 
         
   <section id="contact">
-    <header class="contactMeHeader"> Contact me <a href="#header"><button id="toTopBtn" class="toTopBtn"> Top </button></a>
+    <header class="contactMeHeader"> Contact me <a href="#header"><button id="toTopBtn" class="toTopBtn"> Back To Top </button></a>
     </header><div class="contactMeContainer">
      If you like my work, fill out the form below and shoot me an email. Let's chat!
     
@@ -116,3 +120,4 @@
   </body>
   <script src="script.js"></script>
 </html>
+
