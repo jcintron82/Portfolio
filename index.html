@@ -10,7 +10,7 @@
   </head>
   <section id="header">
    <div class="initialGreeting">
-    <div class="hi">Hi!  <a href="#aboutMe"><button type="button" id="greetingBoxBtn">Enter</button></a></div>
+    <div class="hi">Hi! <!--  <a href="#aboutMe" class="x"><button type="button" id="greetingBoxBtn">Enter</button></a> --></div>
     <div class="nameIntro">I'm Juan.</div>
       
 
@@ -28,22 +28,22 @@
     <section id="aboutMe">
       <header class="aboutMeHeader"> 
        <a href="#header" class="x"><button type="button" id="homeBtn" class="headerBtns">Home</button> </a>
-       <a href="#aboutMeBlurb" class="x"> <button type="button" id="aboutMeBtn" class="headerBtns">About me</button></a>
+       <a href="#aboutMeBlurb" class="x"> <button type="button" id="aboutMeBtn" class="headerBtns">About</button></a>
        <a href="#projects" class="x"><button type="button" id="myWorkBtn" class="headerBtns">My work</button></a>
-       <a href="#contact" class="x"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact me </button></a>
+       <a href="#contact" class="x"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact  </button></a>
       
        
        </header>
        <section id="aboutMeBlurb">
     <div class="selfieContainer" id="aboutMe">
     
-   <div class="aboutMeBlurbWrap"><h1 class="aboutMeBlurbHeader"> About me: </h1> <p> 
+   <div class="aboutMeBlurbWrap"><h1 class="aboutMeBlurbHeader"> About me: </h1> <p class="blurbParagraph"> 
    I'm a motivated programmer with a healthy interest in full stack web development. I have experience building full scale interactive websites and software programs. Whether you're looking to build a website for your customers or a software to make your life easier, I'm here to help :) 
    See a list of my relevent skills and knowledge base below:</p>
  </div><img  class="facePic" src="./images/selfiee.jpg" alt="self photo"></div>
 
-
-  <!--  <div class="skillBubblesContainer">
+<!-- 
+   <div class="skillBubblesContainer">
    <div class="skillsPyramidBtm"> <div class="htmlSkillBubble">HTML</div> <div class="CSSSkillBubble">CSS</div></div>
   
 
@@ -60,28 +60,30 @@
    <div class="projectsHeader"> Recent work </div>
 
 <div class="projectsContainer">
-    <div class="newDiv"><img id="pics" src="./images/cheesusSS.jpg" alt="stock image">
-    <div class="languageIconContainer"><div class="projectDescriptions">Grilled Cheesus Food Truck<br>
+    <div class="newDiv"><div><img id="pics" src="./images/cheesusSS.jpg" alt="stock image">
+    <div class="projectDescriptions">Grilled Cheesus Food Truck</div><div class="languageIconContainer">
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-    <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-    <div class="projectBtnsContainer"><p class="projectBlurbs">This is a landing page/menu I created for a food truck using HTML/CSS and Javascript with Webpack as a compiler. Check it out to make your stomach rumble!</p><div class="linkDivs"><a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-"> Git Repo</a></div></div>
+    <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div></div>
+    <div class="projectBtnsContainer"><p class="projectBlurbs">This is a landing page/menu I created for a food truck using HTML/CSS and Javascript with Webpack as a compiler. Check it out to make your stomach rumble!</p><div class="linkDivs"><a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/"> Live Site</a></div><div class="linkDivsGit"><a href="https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-"> Git Repo</a></div></div>
       </div>
 
-    <div class="newDiv"><img id="pics" src="./images/librarySS.jpg" alt="stock image">
-    <div class="languageIconContainer"><div class="projectDescriptions">Virtual Library<br>
+    <div class="newDiv"><div><img id="pics" src="./images/librarySS.jpg" alt="stock image">
+    <div class="projectDescriptions">Virtual Library</div>
+    <div class="languageIconContainer">
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-    <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-    <div class="projectBtnsContainer"><p class="projectBlurbs">This is an online library I created using HTML/CSS and Javascript. It is a fully functional library which can keep track of books you have read/are reading.</p> <div class="linkDivs"><a href="https://jcintron82.github.io/Online-Library/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/Online-Library"> Git Repo</a></div></div>
+    <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div></div>
+    <div class="projectBtnsContainer"><p class="projectBlurbs">This is an online library I created using HTML/CSS and Javascript. It is a fully functional library which can keep track of books you have read/are reading.</p> <div class="linkDivs"><a href="https://jcintron82.github.io/Online-Library/"> Live Site</a></div><div class="linkDivsGit"><a href="https://github.com/jcintron82/Online-Library"> Git Repo</a></div></div>
       </div>
 
-    <div class="newDiv"><img id="pics" src="./images/etchSS.jpg" alt="stock image">
-    <div class="languageIconContainer"><div class="projectDescriptions">Etch-A-Sketch<br>
+    <div class="newDiv"><div><img id="pics" src="./images/etchSS.jpg" alt="stock image">
+   <div class="projectDescriptions">Etch-A-Sketch</div>
+    <div class="languageIconContainer">
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
     <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-    <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-    <div class="projectBtnsContainer"><p class="projectBlurbs">An Etch-A-Sketch created using HTML/CSS and Javascript. Use it and let your imagination run free!</p><div class="linkDivs"><a href="https://jcintron82.github.io/etch-a-sketch/"> Live Site</a></div><div class="linkDivs"><a href="https://github.com/jcintron82/etch-a-sketch"> Git Repo</a></div></div>
+    <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div></div>
+    <div class="projectBtnsContainer"><p class="projectBlurbs">An Etch-A-Sketch created using HTML/CSS and Javascript. Use it and let your imagination run free!</p><div class="linkDivs"><a href="https://jcintron82.github.io/etch-a-sketch/"> Live Site</a></div><div class="linkDivsGit"><a href="https://github.com/jcintron82/etch-a-sketch"> Git Repo</a></div></div>
       </div>
 
    
@@ -90,7 +92,7 @@
 
         
   <section id="contact">
-    <header class="contactMeHeader"> Contact me <a href="#header"><button id="toTopBtn" class="toTopBtn"> Back To Top </button></a>
+    <header class="contactMeHeader"> Contact me 
     </header><div class="contactMeContainer">
      If you like my work, fill out the form below and shoot me an email. Let's chat!
     
@@ -114,7 +116,7 @@
         </svg></a>
        
           <a href="https://github.com/jcintron82"><img class="githubIcon" src="./images/github.png"></a>
-          
+          <a href="#header"><button id="toTopBtn" class="toTopBtn"> Back To Top </button></a>
       </div>
     </section>
   </body>
