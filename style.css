@@ -103,7 +103,7 @@ width: 25%; }
      animation-timing-function: ease-in;}
   100% {margin-right: 85vw;
    	 animation-timing-function: ease-in;
- 	background-color: #A3148C;
+ 	background-color: #828A95;
  	}
   
 }
@@ -118,7 +118,10 @@ width: 25%; }
 	animation-name: headerAttributeBox1Animation;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
-  	
+  	border-style: solid;
+  	border-color: red;
+  	border-width: 1.5px;
+  	font-family: 'Rubik', sans-serif;
 	
 }
 
@@ -133,7 +136,7 @@ width: 25%; }
      animation-timing-function: ease-in;}
   100% {margin-right: 42.5vw;
      animation-timing-function: ease-in;
- 	background-color: #91127C;}
+ 	background-color: #828A95;}
  
 
   
@@ -149,6 +152,10 @@ width: 25%; }
 	animation-name: headerAttributeBox2Animation;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
+  	border-style: solid;
+  	border-color: red;
+  	border-width: 1.4px;
+  	font-family: 'Rubik', sans-serif;
   	
 }
 
@@ -174,8 +181,12 @@ width: 25%; }
 	animation-name: headerAttributeBox3Animation;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
-  	background-color: #7F106D;
+  	background-color: #828A95;
+  	border-style: solid;
+  	border-color: red;
   	margin: 1.5vw;
+  	border-width: 1.5px;
+  	font-family: 'Rubik', sans-serif;
 
 }
 
@@ -226,7 +237,7 @@ width: 25%; }
 	align-self: flex-end;
 	border-radius:5vw;
 	margin-top: 10vw;
-	box-shadow: -7px -10px 0px -1px #7F106D;
+	box-shadow: -7px -10px 0px -1px #828A95;
 }
 
 .aboutMeHeaderStyling{
@@ -240,6 +251,9 @@ width: 25%; }
 .aboutMeBlurbHeader {
 	font-size: 1.15em;
 	padding-left: 1.5vw;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+
 }
 
   .aboutMeBlurbWrap {
@@ -247,12 +261,13 @@ width: 25%; }
 		min-height: 17vh;
 		max-width: 80vw;
 		max-height:60vh;
-   	background-color: darkgrey;
+   	background-color: #2E2F38;
    	margin-left: 0;
    	margin-top: 10vw;
    	border-radius: 10px;
    	align-self: flex-end;
    	font-size: 1em;
+   	font-family: 'Roboto', sans-serif;
 
 
 
@@ -396,6 +411,7 @@ width: 25%; }
 	max-height: 60vh;
 	max-width: 90vw;
 	padding: 1.5vw;
+	border-radius: 5%;
 	
 }
 
@@ -413,7 +429,8 @@ width: 25%; }
 
 	color: white;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.5em;
+	padding: 2.5vh;
 }
 /*.projectInfoContainers {
 	border-style: solid;
@@ -425,18 +442,19 @@ width: 25%; }
 
 
 .languageIconContainer{
-	display: inline-flex;
-	justify-content: flex-start;
+	display: flex;
+	justify-content: center;
 	font-size: 5vw;
 	align-self: center;
-	margin-left: 8vw;
+	order: 3;
+	
 
 
 
 }
 
 .languageIcons {
-	width: 15vw;
+	max-width: 13vw;
 	height: 15vw;
 	padding: 2vw;
 
@@ -459,9 +477,9 @@ width: 25%; }
 }
 
 .projectBlurbs {
-	text-align: left;
-	margin-right: 8vw;
-	font-size: 1.25em;
+	text-align: center;
+	font-size: 1.1em;
+	font-family: 'roboto', sans-serif;
 }
 .linkDivs{
 	color: white;
@@ -515,7 +533,7 @@ width: 25%; }
 	margin-left: 30vw;
 	border-style: solid;
 	border-color: red;
-	border-width: .2rem;
+	border-width: 2px;
 	background-color:#1B1C22;
 	color: white;
 	font-size: .5em;
@@ -549,17 +567,18 @@ textarea {
 
 
 #contactMeSubmitBtn {
-	max-width: 20vw;
+	width: 30vw;
 	height: 15vw;
 	margin-bottom: 3vw;
 	border-radius: 1.5vw;
 	margin-left: 40vw;
 	border-style: solid;
-	border-width: 5px;
+	border-width: 3px;
 	border-color: red;
 	background-color: #1B1C22;
 	color: white;
 	margin-top: 2.5vh;
+	font-size: .75em;
 
 }
 .socialLinks {
@@ -655,6 +674,7 @@ svg {
 	padding: .5vw;
 	border-style: none none solid;
 	border-color: white;
+	font-family: 'Prompt', sans-serif;
 	
 }
 
@@ -677,7 +697,7 @@ svg {
 	border-radius:5vw;
 	margin-top: 3vw;
 	margin-right: 17vw;
-	box-shadow: -7px -10px 0px -1px #7F106D;
+	box-shadow: -7px -10px 0px -1px #828A95;
 
 	}
 
@@ -686,7 +706,6 @@ svg {
 		max-width: 55vw;
 		min-height: 25vh;
 		max-height: 60vh;
-   	background-color: darkgrey;
    	margin-left: 0;
    	margin-top: 3vh;
    	border-radius: 10px;
@@ -740,12 +759,14 @@ svg {
 
 }
 .headerAttributeBox1 {
-max-height: 10rem;
-margin: 1vw;
-font-size: 1.5em;
-text-align: center;
-margin-bottom: 1rem;
-width: 45vw;
+	max-height: 10rem;
+	margin: 1vw;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 1rem;
+	width: 45vw;
+	font-family: 'Rubik', sans-serif;
+
 
 
 }
@@ -756,7 +777,7 @@ font-size: 1.5em;
 text-align: center;
 margin-bottom: 1rem;
 width: 50vw;
-
+font-family: 'Rubik', sans-serif;
   	
 }
 
@@ -768,6 +789,7 @@ font-size: 1.5em;
 text-align: center;
 margin-bottom: 1rem;
 width: 55vw;
+font-family: 'Rubik', sans-serif;
 
 
 
@@ -784,7 +806,7 @@ width: 55vw;
     75% { opacity: 75%;}
      100% { opacity: 100%;
      margin-right: 65vw;
-  background-color: #A3148C;}
+  background-color: #828A95;}
  	}
 
  	@keyframes headerAttributeBox2Animation {
@@ -797,7 +819,7 @@ width: 55vw;
     75% { opacity: 75%;}
      100% { opacity: 100%;
      margin-right: 60vw;
-  background-color: #A3148C;}
+  background-color: #828A95;}
  	}
 
  	@keyframes headerAttributeBox3Animation {
@@ -810,7 +832,7 @@ width: 55vw;
     75% { opacity: 75%;}
      100% { opacity: 100%;
      margin-right: 55vw;
-  background-color: #A3148C;}
+  background-color: #828A95;}
  	}
 #greetingBoxBtn {
 	align-self: center;
@@ -823,44 +845,61 @@ width: 55vw;
 .projectsHeader {
 	font-size: 2em;
 	align-self: flex-start;
+	font-family: 'Rubik', sans-serif;
 }
+
+.projectImgTitleWrap {
+	display: flex;
+	flex-direction: column;
+
+}
+
+
 #pics {
 	max-height: 20vw;
 	min-width:40vw;
 	padding: 1.5vw;
 	margin-left: 0;
 	align-self: flex-start;
+	order: 2;
+
+
+
 }
 
 .newDiv {
 	width: 85vw;
-	padding: 1vw;
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding-top: 1vh;
+	margin-top: 0;
 
 }
 
 
 
 .projectDescriptions{
-	font-size: 3em;
+	font-size: 2em;
 	color: white;
 	text-align: center;
 	padding: 1.5vw;
 	margin-left: 0vw;
+	font-family: 'Rubik', sans-serif;
 
 }
 .languageIcons{
 	width:4vw;
 	height: 4vw;
-
+		border-style: none none solid;
+		border-color: white;
+		border-width: 1px;
 }
 
 .projectBlurbs {
-	text-align: center;
 	margin-right: 8vw;
-	font-size: 3em;
+	font-size: 25px;
 }
 
 .projectBtnsContainer{
@@ -923,7 +962,7 @@ width: 55vw;
 	margin-bottom: 2vh;
 	border-style: solid;
 	border-color: red;
-	border-width: .2rem;
+	border-width: 2.5px;
 	background-color:#1B1C22;
 	color: white;
 	font-size: .65em;
@@ -947,7 +986,7 @@ textarea {
 	font-size: 1.25em;
 	max-height: 15vh;
 	width: 40vw;
-	margin-bottom: 3vw;
+	margin-bottom: 0;
 	
 }
 
@@ -959,6 +998,7 @@ textarea {
 	margin-bottom: 3vw;
 	border-radius: 1.5vw;
 	margin-left: 26vw;
+	font-size: 1em;
 }
 .socialLinks{
 	height: 110%;
