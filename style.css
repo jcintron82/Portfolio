@@ -1,6 +1,7 @@
 html {
 	background-color: #1B1C22;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body { margin:0;
@@ -166,6 +167,7 @@ width: 25%;
 
 }
 
+
 .greetingBoxBtnMobileWrapper {
 	width: 60%;
 	display: flex;
@@ -183,7 +185,9 @@ width: 25%;
 	text-align: center;
 	box-shadow: 0px 11px 14px -7px red;
 	color: white;
-	
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+
 }
 
 .greetingBoxBtn {
@@ -367,6 +371,7 @@ width: 25%;
 	padding-top: 3vh;
 	padding-bottom: 3vh;
 	color: white;
+	font-family: 'Cabin', sans-serif;
 }
 
 .contactMeContainer {
@@ -374,6 +379,7 @@ width: 25%;
 	color: white;
 	text-align: center;
 	padding: 4vw;
+	font-family: 'Roboto Slab', serif;
 }
 
 .toTopBtn {
@@ -399,17 +405,22 @@ label {
 	color: white;
 	padding-bottom: 1.5vh;
 	padding-top: 1.5vh;
+	font-family: 'Rubik', sans-serif;
 }
 
 input {
 	height: 10vw;
 	border-radius: 10px;
+	font-family: lato;
+	
 }
 
 textarea {
 	height: 20vw;
 	margin-bottom: 4vw;
 	border-radius: 10px;
+	font-family: lato;
+
 }
 
 #contactMeSubmitBtn {
@@ -624,9 +635,10 @@ svg {
   margin-right: 55vw;
   background-color: #828A95;}
  	}
+
 .greetingBoxBtn {
 	display: block;
-	margin-left: 35vw;
+	margin-left: 20vw;
 	height: 50px;
 	width: 150px;
 	border-radius: 10px;
@@ -636,7 +648,16 @@ svg {
 	text-align: center;
 	box-shadow: 0px 11px 14px -7px red;
 	color: white;
-	
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+
+}
+
+.greetingBoxBtn:hover {
+	cursor: pointer;
+}
+.greetingBoxBtn:active{
+	background-color: #363945;
 }
 
 .greetingBoxBtnMobile {
@@ -745,9 +766,9 @@ svg {
 
 }
 .toTopBtn {
-	width: 5vw;
-	height: 5vw;
-	border-radius: 50%;
+	width:10vw;
+	height: 4vh;
+	border-radius: 10px;
 	margin-bottom: 2vh;
 	border-style: solid;
 	border-color: red;
@@ -755,8 +776,13 @@ svg {
 	background-color:#1B1C22;
 	color: white;
 	font-size: .65em;
-
+	margin-left: 0;
 }
+
+.toTopBtn:hover {
+	cursor: pointer;
+}
+
 .contactMeContainer {
 	font-size: 1.5em;
 	text-align: center;
@@ -787,6 +813,10 @@ textarea {
 	margin-left: 26vw;
 	font-size: 1em;
 }
+
+#contactMeSubmitBtn:hover {
+	cursor: pointer;
+}
 .socialLinks{
 	height: 110%;
 }
@@ -803,9 +833,20 @@ svg {
 
 }
 
+.hideLinkPointers:hover{
+cursor: default;
+}
+
+@media (min-width: 1050px) {
+	.greetingBoxBtn {
+		margin-left: 30vw;
+	}
+}
+
+
 /** {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
-}
-*/
+}*/
+
