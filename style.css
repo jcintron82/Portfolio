@@ -82,16 +82,21 @@ width: 25%;
 
 @keyframes headerAttributeBox1Animation {
   0% {margin-right: 0vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+     opacity: .75;}
   25% {margin-right: 20vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+     opacity: .75;}
   50%   {margin-right: 40vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+     opacity: 1;}
   75%   {margin-right: 60vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+     opacity: 1.75;}
   100% {margin-right: 85vw;
    	 animation-timing-function: ease-in;
- 	background-color: #828A95;
+ 		background-color: #828A95;
+ 		opacity: 2;
  	}
   
 }
@@ -112,15 +117,24 @@ width: 25%;
 
 @keyframes headerAttributeBox2Animation {
   0% {margin-right: 0vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+     opacity: 1;}
+
   25% {margin-right: 10vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+  	opacity: 1}
+
   50%   {margin-right: 20vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+ 		opacity: 1.25 }
+
   75%   {margin-right: 30vw;
-     animation-timing-function: ease-in;}
+     animation-timing-function: ease-in;
+  		opacity: 1.5}
+
   100% {margin-right: 42.5vw;
      animation-timing-function: ease-in;
+    opacity: 2;
  	background-color: #828A95;}
  
 }
@@ -136,6 +150,7 @@ width: 25%;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
   	font-family: 'Rubik', sans-serif;
+
   	
 }
 
