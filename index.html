@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,143 +13,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Prompt:wght@300&family=Roboto+Slab&family=Rubik&display=swap" rel="stylesheet">
-
-  </head>
+</head>
 <section id="header">
-  <div class="initialGreeting">
-   <div class="hi">Hi!  <a href="#aboutMe" class="x"><button type="button" id="greetingBoxBtn"  class="  greetingBoxBtn">Enter</button></a></div>
-    <div class="nameIntro">I'm Juan.</div>
-      
-
-<div class="attributeAnimations">
-    <div class="headerAttributeBox1">Designer.</div>
-        <div class="headerAttributeBox2">Programmer.</div>
+    <div class="initialGreeting">
+        <div class="hi">Hi! <a href="#aboutMe" class="x"><button type="button" id="greetingBoxBtn" class="  greetingBoxBtn">Enter</button></a></div>
+        <div class="nameIntro">I'm Juan.</div>
+        <div class="attributeAnimations">
+            <div class="headerAttributeBox1">Designer.</div>
+            <div class="headerAttributeBox2">Programmer.</div>
             <div class="headerAttributeBox3">Web Developer.</div>
-                </div>
-
-  <div class="greetingBoxBtnMobileWrapper"><a href="#aboutMe" class="x"><button type="button" id="greetingBoxBtn" class="greetingBoxBtnMobile">Enter</button></a>
-  </div>
-    </section>
-
-
-  <body id="body">
-    <section id="aboutMe">
-      <header class="aboutMeHeader"> 
-       <a href="#header" class="x"><button type="button" id="homeBtn" class="headerBtns">Home</button> </a>
-          <a href="#aboutMe" class="x"> <button type="button" id="aboutMeBtn" class="headerBtns">About</button></a>
-              <a href="#projects" class="x"><button type="button" id="myWorkBtn" class="headerBtns">My work</button></a>
-                   <a href="#contact" class="x"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact  </button></a>
-      </header>
-
-
-  <section id="aboutMeBlurb">
-      <div class="selfieContainer" id="aboutMe">
-        <div class="aboutMeBlurbWrap"><h1 class="aboutMeBlurbHeader"> About me: </h1> <p class="blurbParagraph"> 
-        I'm a motivated Web Developer with a primary interest in front-end development utilizing HTML/CSS and Javascript; although I'm always ready and eager to learn any new tools a job may need! Whether you're looking to build a website for your customers, or an application to improve the quality of your life, I'm here to help. </p>
         </div>
-        <img  class="facePic" src="./images/selfiee.jpg" alt="self photo">
-          </div>
-            </section>
+        <div class="greetingBoxBtnMobileWrapper"><a href="#aboutMe" class="x"><button type="button" id="greetingBoxBtn" class="greetingBoxBtnMobile">Enter</button></a> </div>
+</section>
 
-  <section id="projects">
-      <div class="projectsHeader"> Recent work </div>
-        <div class="projectsContainer">
-            <div class="newDiv">
-               <div class="projectImgTitleWrap">
-                    <img id="pics" src="images/cheesusSS.JPG" alt="stock image">
+<body id="body">
+    <section id="aboutMe">
+        <header class="aboutMeHeader"> <a href="#header" class="x"><button type="button" id="homeBtn" class="headerBtns">Home</button> </a> <a href="#aboutMe" class="x"> <button type="button" id="aboutMeBtn" class="headerBtns">About</button></a> <a href="#projects" class="x"><button type="button" id="myWorkBtn" class="headerBtns">My work</button></a> <a href="#contact" class="x"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact </button></a> </header>
+        <section id="aboutMeBlurb">
+            <div class="selfieContainer" id="aboutMe">
+                <div class="aboutMeBlurbWrap">
+                    <h1 class="aboutMeBlurbHeader"> About me: </h1>
+                    <p class="blurbParagraph"> I'm a motivated Web Developer with a primary interest in front-end development utilizing HTML/CSS and Javascript; although I'm always ready and eager to learn any new tools a job may need! Whether you're looking to build a website for your customers, or an application to improve the quality of your life, I'm here to help. </p>
+                </div> <img class="facePic" src="./images/selfiee.jpg" alt="self photo">
+            </div>
+        </section>
+        <section id="projects">
+            <div class="projectsHeader"> Recent work </div>
+            <div class="projectsContainer">
+               <div class="newDiv">
+                    <div class="projectImgTitleWrap"> <img id="pics" src="images/weatherapp.JPG" alt="weather application screenshot">
+                        <div class="projectDescriptions">Weather App</div>
+                        <div class="languageIconContainer"> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /><img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
+                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                       </div>
+                    </div>
+                    <div class="projectBtnsContainer">
+                        <p class="projectBlurbs">An application which returns the current weather data for the searched location. It was created using React.js and CSS.</p>
+                        <div class="linkDivs"> <a href="https://jcintron82.github.io/Weather-app/"> Live Site</a></div>
+                        <div class="linkDivsGit"><a href="https://github.com/jcintron82/Weather-app"> Git Repo</a></div>
+                    </div>
+                </div>
+                <div class="newDiv">
+                    <div class="projectImgTitleWrap"> <img id="pics" src="images/cheesusSS.JPG" alt="stock image">
                         <div class="projectDescriptions">Grilled Cheesus Food Truck</div>
-
- <div class="languageIconContainer">
-      <img class="languageIcons"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />      
-            <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" />
-                    </div></div>
-
-
-  <div class="projectBtnsContainer">
-      <p class="projectBlurbs">This is a landing page/menu I created for a food truck using HTML/CSS and Javascript with Webpack as a compiler. Check it out to make your stomach rumble!</p>
-      <div class="linkDivs">
-        <a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/"> Live Site</a>
-          </div>
-          <div class="linkDivsGit">
-            <a href="https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-"> Git Repo</a>
-          </div>
+                        <div class="languageIconContainer"> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" /> </div>
+                    </div>
+                    <div class="projectBtnsContainer">
+                        <p class="projectBlurbs">This is a landing page/menu I created for a food truck using HTML/CSS and Javascript with Webpack as a compiler. Check it out to make your stomach rumble!</p>
+                        <div class="linkDivs"> <a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/"> Live Site</a> </div>
+                        <div class="linkDivsGit"> <a href="https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-"> Git Repo</a> </div>
+                    </div>
+                </div>
+                <div class="newDiv">
+                    <div class="projectImgTitleWrap"> <img id="pics" src="images/librarySS.JPG" alt="stock image">
+                        <div class="projectDescriptions">Virtual Library</div>
+                        <div class="languageIconContainer"> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> </div>
+                    </div>
+                    <div class="projectBtnsContainer">
+                        <p class="projectBlurbs">This is an online library I created using HTML/CSS and Javascript. It is a fully functional library which can keep track of books you have read/are reading.</p>
+                        <div class="linkDivs"> <a href="https://jcintron82.github.io/Online-Library/"> Live Site</a> </div>
+                        <div class="linkDivsGit"><a href="https://github.com/jcintron82/Online-Library"> Git Repo</a> </div>
+                    </div>
+                </div>
+               
             </div>
-              </div>
+        </section>
+        <section id="contact">
+            <header class="contactMeHeader"> Contact me </header>
+            <div class="contactMeContainer"> If you like my work, fill out the form below and shoot me an email. Let's chat! </div>
+            <form class="contactMeForm" action="https://formspree.io/f/xdojgvzv" method="post"> <label>Name</label> <input type="name" name="name"></input> <label>E-mail</label> <input type="email" name="email"></input> <label>Message</label> <textarea type="text" name="message"></textarea> <button type="submit" id="contactMeSubmitBtn"> Submit </button> </form>
+            <div class="socialLinks"> <a href="https://www.linkedin.com/in/juan-cintron-73a184218/"><svg viewBox="0 0 128 128">
+                        <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path>
+                        <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
+                    </svg></a> <a href="https://github.com/jcintron82"><img class="githubIcon" src="./images/github.png"></a> <a href="#header" class="hideLinkPointers"><button id="toTopBtn" class="toTopBtn"> Back To Top </button></a> </div>
+        </section>
+</body>
+<script src="script.js"></script>
 
-
-
-
-    <div class="newDiv">
-        <div class="projectImgTitleWrap">
-            <img id="pics" src="images/librarySS.JPG" alt="stock image">
-                <div class="projectDescriptions">Virtual Library</div>
-    <div class="languageIconContainer">
-        <img class="languageIcons"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-           <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />   
-               <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                  </div>
-          </div>
-
-    <div class="projectBtnsContainer">
-      <p class="projectBlurbs">This is an online library I created using HTML/CSS and Javascript. It is a fully functional library which can keep track of books you have read/are reading.</p>
-          <div class="linkDivs">
-            <a href="https://jcintron82.github.io/Online-Library/"> Live Site</a>
-          </div>
-          <div class="linkDivsGit"><a href="https://github.com/jcintron82/Online-Library"> Git Repo</a>
-          </div>
-            </div>
-              </div>
-
-    <div class="newDiv"><div class="projectImgTitleWrap">
-        <img id="pics" src="images/etchSS.JPG" alt="stock image">
-          <div class="projectDescriptions">Etch-A-Sketch</div>
-    <div class="languageIconContainer">
-        <img class="languageIcons"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-            <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />   
-                <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
-              </div>
-    <div class="projectBtnsContainer">
-      <p class="projectBlurbs">An Etch-A-Sketch created using HTML/CSS and Javascript. Use it and let your imagination run free!</p>
-      <div class="linkDivs">
-        <a href="https://jcintron82.github.io/etch-a-sketch/"> Live Site</a></div><div class="linkDivsGit"><a href="https://github.com/jcintron82/etch-a-sketch"> Git Repo</a></div>
-      </div>
-      </div>
-    </div>
-    </section>
-
-        
-  <section id="contact">
-    <header class="contactMeHeader"> Contact me 
-    </header><div class="contactMeContainer">
-     If you like my work, fill out the form below and shoot me an email. Let's chat!
-      </div>
-        <form class="contactMeForm" action="https://formspree.io/f/xdojgvzv" method="post">
-          <label>Name</label>
-          <input type="name" name="name"></input>
-
-          <label>E-mail</label>
-          <input type="email" name="email"></input>
-
-          <label>Message</label>
-          <textarea type="text" name="message"></textarea>
-
-          <button type="submit" id="contactMeSubmitBtn"> Submit </button>
-          </form>
-
-
-      <div class="socialLinks">
-        <a href="https://www.linkedin.com/in/juan-cintron-73a184218/"><svg viewBox="0 0 128 128">
-        <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path>
-
-        <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
-        </svg></a>
-          <a href="https://github.com/jcintron82"><img class="githubIcon" src="./images/github.png"></a>
-          <a href="#header" class="hideLinkPointers"><button id="toTopBtn" class="toTopBtn" > Back To Top </button></a>
-              </div>
-                </section>
-                    </body>
-  <script src="script.js"></script>
 </html>
-
