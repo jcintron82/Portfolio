@@ -300,7 +300,7 @@ width: 25%;
 	max-height: 60vh;
 	max-width: 90vw;
 	padding: 1.5vw;
-	border-radius: 5%;
+	border-radius: 20px;
 }
 
 .newDiv {
@@ -558,14 +558,15 @@ svg {
 	margin-top: 3vw;
 	margin-right: 17vw;
 	box-shadow: -7px -10px 0px -1px #828A95;
+	margin-left: 100px;
 	}
 
    .aboutMeBlurbWrap {
    min-width: 30vw;
-	max-width: 55vw;
+	max-width: 40vw;
 	min-height: 25vh;
-	max-height: 60vh;
-   margin-left: 0;
+	max-height: 100vh;
+   margin-left: 10vw;
    margin-top: 3vh;
    border-radius: 10px;
    align-self: flex-end;
@@ -698,6 +699,7 @@ svg {
 	margin-left: 0;
 	align-self: flex-start;
 	order: 2;
+	border-radius: 40px;
 }
 
 .newDiv {
