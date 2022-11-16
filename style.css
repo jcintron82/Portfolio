@@ -112,6 +112,7 @@ width: 25%;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
   	font-family: 'Rubik', sans-serif;
+	padding-right: 50px;
 	
 }
 
@@ -150,6 +151,8 @@ width: 25%;
   	animation-duration: 1s;
   	animation-fill-mode: forwards;
   	font-family: 'Rubik', sans-serif;
+	padding-right: 55px;
+	
 
   	
 }
@@ -376,7 +379,7 @@ width: 25%;
 }
 
 .contactMeHeader {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	display: flex;
 	justify-content: space-evenly;
 	justify-content: center;
@@ -390,7 +393,7 @@ width: 25%;
 }
 
 .contactMeContainer {
-	font-size: 1.2em ;
+	font-size: 1em ;
 	color: white;
 	text-align: center;
 	padding: 4vw;
@@ -398,17 +401,19 @@ width: 25%;
 }
 
 .toTopBtn {
-	width: 15vw;
-	height: 15vw;
-	align-self: flex-end;
-	border-radius: 50%;
-	margin-left: 30vw;
-	border-style: solid;
-	border-color: red;
-	border-width: 2px;
-	background-color:#1B1C22;
+	width: 4rem;
+	height: 5vh;
+	border-radius: 5px;
+	background-color:  #272932;
+	text-align: center;
+	box-shadow:  5px 6px 0px -3px   #828A95;
 	color: white;
-	font-size: .5em;
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	margin-top: 20px;
+	border-color: white;
+	border-width: .1px;
+	margin: .5rem;
 }
 
 .contactMeForm {
@@ -431,7 +436,7 @@ input {
 }
 
 textarea {
-	height: 20vw;
+	height: 25vw;
 	margin-bottom: 4vw;
 	border-radius: 10px;
 	font-family: lato;
@@ -439,40 +444,36 @@ textarea {
 }
 
 #contactMeSubmitBtn {
-	width: 30vw;
-	height: 15vw;
-	margin-bottom: 3vw;
-	border-radius: 1.5vw;
-	margin-left: 40vw;
-	border-style: solid;
-	border-width: 3px;
-	border-color: red;
-	background-color: #1B1C22;
+	min-width: 7rem;
+	height: 8vh;
+	border-radius: 5px;
+	background-color:  #272932;
+	text-align: center;
+	box-shadow: 6px 9px 0px -3px  #828A95;
 	color: white;
-	margin-top: 2.5vh;
-	font-size: .75em;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
 }
 
 .socialLinks {
 	display:flex;
-	justify-content: center;
-	align-items: center;
-	justify-content: space-evenly;
+	align-items: flex-end;
+	justify-content: space-between;
 	color: white;
 	height: 25vw;
 	padding-top: 5vh;
 }
 
 svg {
-	height: 13vw;
-	width: 13vw;
-	padding: 1vw;
+	height: 2rem;
+	width: 2rem;
+	margin-right: 1vw;
 }
 
 .githubIcon {
-	padding: 1vw;
-	height: 15vw;
-	width: 20vw;
+
+	height: 2rem;
+	width: 2rem;
 
 }
 
@@ -481,7 +482,11 @@ svg {
     color: #0f0 !important;
     outline: solid #f00 1px !important;
 }*/
+.sbmtBtnWrap {
+	display: flex;
+	justify-content: center;
 
+}
 
 /*////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -492,6 +497,7 @@ svg {
 
 
 @media (min-width: 700px) {
+
 	.initialGreeting {
 		font-size: 5em;
 
@@ -502,15 +508,16 @@ svg {
 
 	.nameIntro {
 	padding: 0;
-	font-size: .75em;
+	font-size: .65em;
 
 	}
 	.hi {
 	display: inline-flex;
 	padding-left: 0;
 	text-indent: 40vw;
-	font-size: 1em;
+	font-size: .8em;
 	min-height: 20vh;
+	align-items: center;
 	}
 
 .aboutMeHeader{
@@ -527,7 +534,7 @@ svg {
 }
 
 .headerBtns{
-	font-size: 20px;
+	font-size: 17px;
 	max-height: 10vh;
 	background-color: #1B1C22;
 	color: white;
@@ -587,8 +594,9 @@ svg {
 	font-size: 1.5em;
 	text-align: center;
 	margin-bottom: 1rem;
-	width: 45vw;
+	max-width: 45vw;
 	font-family: 'Rubik', sans-serif;
+	padding-right: 50px;
 }
 
 .headerAttributeBox2 {
@@ -597,8 +605,9 @@ svg {
 	font-size: 1.5em;
 	text-align: center;
 	margin-bottom: 1rem;
-	width: 50vw;
+	max-width: 58vw;
 	font-family: 'Rubik', sans-serif;
+	padding-right: 50px;
   	
 }
 
@@ -608,8 +617,9 @@ svg {
 	font-size: 1.5em;
 	text-align: center;
 	margin-bottom: 1rem;
-	width: 55vw;
+	max-width: 80vw;
 	font-family: 'Rubik', sans-serif;
+	padding-right: 50px;
 
 }
 
@@ -636,6 +646,7 @@ svg {
    75% { opacity: 75%;}
    100% { opacity: 100%;
    margin-right: 60vw;
+;
   background-color: #828A95;}
  	}
 
@@ -771,7 +782,7 @@ svg {
 
 .contactMeHeader {
 	text-align: left;
-	font-size: 2.5em;
+	font-size: 1.75em;
 	display: flex;
 	justify-content: space-evenly;
 	justify-content: center;
@@ -782,18 +793,32 @@ svg {
 	color: white;
 
 }
+.formWrap {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+
+}
+
+.sbmtBtnWrap {
+	display: flex;
+	justify-content: center;
+
+}
 .toTopBtn {
-	width:10vw;
-	height: 4vh;
-	border-radius: 10px;
-	margin-bottom: 2vh;
-	border-style: solid;
-	border-color: red;
-	border-width: 2.5px;
-	background-color:#1B1C22;
+	width: 8rem;
+	height: 8vh;
+	border-radius: 5px;
+	background-color:  #272932;
+	text-align: center;
+	box-shadow: 6px 9px 0px -3px  #828A95;
 	color: white;
-	font-size: .65em;
-	margin-left: 0;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	margin-top: 20px;
+	border-color: white;
+	border-width: .1px;
+	margin: 1rem;
 }
 
 .toTopBtn:hover {
@@ -801,7 +826,7 @@ svg {
 }
 
 .contactMeContainer {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	text-align: center;
 }
 .contactMeForm {
@@ -817,18 +842,26 @@ input {
 textarea {
 	font-size: 1.25em;
 	max-height: 15vh;
-	width: 40vw;
+	width: 35vw;
 	margin-bottom: 0;
 	
 }
 
 #contactMeSubmitBtn {
-	width: 15vw;
+	min-width: 10rem;
+	max-width: 15rem;
 	height: 8vh;
-	margin-bottom: 3vw;
-	border-radius: 1.5vw;
-	margin-left: 26vw;
-	font-size: 1em;
+	border-radius: 5px;
+	background-color:  #272932;
+	text-align: center;
+	box-shadow: 6px 9px 0px -3px  #828A95;
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	margin-top: 20px;
+	border-color: white;
+	border-width: .1px;
+	
 }
 
 #contactMeSubmitBtn:hover {
@@ -836,16 +869,17 @@ textarea {
 }
 .socialLinks{
 	height: 110%;
+	
 }
 svg {
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 	padding: 1vw;
 }
 
 .githubIcon {
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 	padding: 1vw;
 
 }
@@ -867,3 +901,8 @@ cursor: default;
     outline: solid #f00 1px !important;
 }*/
 
+@media (min-width:950px) {
+	.headerBtns {
+		font-size: 23px;
+	}
+}
