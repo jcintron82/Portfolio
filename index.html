@@ -1,119 +1,300 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>J. Cintron's Portfolio</title>
-      <meta name="viewport" content="width=device-width inital-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Rubik&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Prompt:wght@300&family=Roboto+Slab&family=Rubik&display=swap" rel="stylesheet">
-   </head>
-   <section id="header">
-      <div class="initialGreeting">
-      <div class="hi">Hi! <a href="#aboutMe" class="x"><button type="button" id="greetingBoxBtn" class="  greetingBoxBtn">Enter</button></a></div>
-      <div class="nameIntro">I'm Juan.</div>
-      <div class="attributeAnimations">
-         <div class="headerAttributeBox1">Innovator.</div>
-         <div class="headerAttributeBox2">Programmer.</div>
-         <div class="headerAttributeBox3">Web Developer. &lt/&gt</div>
-      </div>
-      <div class="greetingBoxBtnMobileWrapper"><a href="#aboutMe" class="x"><button type="button" id="greetingBoxBtn" class="greetingBoxBtnMobile">Enter</button></a> </div>
-   </section>
-   <body id="body">
-      <section id="aboutMe">
-         <header class="aboutMeHeader"> <a href="#header" class="x"><button type="button" id="homeBtn" class="headerBtns">Home</button> </a> <a href="#aboutMeBlurb" class="x"> <button type="button" id="aboutMeBtn" class="headerBtns">About</button></a> <a href="#projects" class="x"><button type="button" id="myWorkBtn" class="headerBtns">My work</button></a> <a href="#contact" class="x"> <button type="button" id="contactMeBtn" class="headerBtns"> Contact </button></a> </header>
-         <section id="aboutMeBlurb">
-            <div class="selfieContainer" id="aboutMe">
-               <div class="aboutMeBlurbWrap">
-                  <h1 class="aboutMeBlurbHeader"> About me: </h1>
-                  <p class="blurbParagraph"> Web Developer with a primary focus on front-end development utilizing Javascript and React. I enjoy finding what makes things work the way they do and breaking big problems into smaller ones.  </p>
-               </div>
-               <img class="facePic" src="./images/selfiee.jpg" alt="self photo">
-            </div>
-         </section>
-         <section id="projects">
-            <div class="projectsHeader"> Recent work </div>
-            <div class="projectsContainer">
-              
-             
-               <div class="newDiv">
-                  <div class="projectImgTitleWrap">
-                     <img id="pics" src="images/bbss.JPG" alt="a screenshot of my bulletin board project">
-                     <div class="projectDescriptions">Bulletin Board</div>
-                     <div class="languageIconContainer"> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />  </div>
-                  </div>
-                  <div class="projectBtnsContainer">
-                     <p class="projectBlurbs">An online bulletin board where users can post customized messages. This was created utilizing Express as a framework for Node on the backend with vanilla CSS on the front.</p>
-                     <div class="linkDivs"> <a href="https://bulletin-board.onrender.com/"> Live Site</a> </div>
-                     <div class="linkDivsGit"><a href="https://github.com/jcintron82/Bulletin-Board"> Git Repo</a> </div>
-                  </div>
-               </div>
-               <div class="newDiv">
-                  <div class="projectImgTitleWrap">
-                     <img id="pics" src="images/magnoliaSS.JPG" alt="a screenshot of the magnolia marketplace">
-                     <div class="projectDescriptions">Magnolia Marketplace | Ecommerce</div>
-                     <div class="languageIconContainer"> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /> </div>
-                  </div>
-                  <div class="projectBtnsContainer">
-                     <p class="projectBlurbs">An Ecommerce application listing a variety of electronic products. Build utilizing Javascript, React and CSS.</p>
-                     <div class="linkDivs"> <a href="https://magnolia-marketplace.vercel.app/home"> Live Site</a> </div>
-                     <div class="linkDivsGit"><a href="https://github.com/jcintron82/Magnolia-Marketplace"> Git Repo</a> </div>
-                  </div>
-               </div>
-               <div class="newDiv">
-                  <div class="projectImgTitleWrap">
-                     <img id="pics" src="images/casinoSS.JPG " alt="matching game application screenshot">
-                     <div class="projectDescriptions">Casino Royale Matching Game</div>
-                     <div class="languageIconContainer"> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
-                        <img class="languageIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /> </div>
-                  </div>
-                  <div class="projectBtnsContainer">
-                     <p class="projectBlurbs">This is a tile matching game I created using Javascript, React and CSS. It's a standard tile matching game with the twist of a slot machine turn that runs when a new high score is reached.</p>
-                     <div class="linkDivs"> <a href="https://jcintron82.github.io/Memory-Game/"> Live Site</a></div>
-                     <div class="linkDivsGit"><a href="https://github.com/jcintron82/Memory-Game"> Git Repo</a></div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section id="contact">
-            <header class="contactMeHeader"> Contact me </header>
-            <div class="contactMeContainer"> If you like my work, fill out the form below and shoot me an email. Let's chat! </div>
-            <div class='formWrap'>
-            <form class="contactMeForm"   action="https://formspree.io/f/xdojgvzv"
-               method="POST">
-               <label>Name</label> <input id="nameInput" type="name" name="name" required></input> <label>E-mail</label> <input id='emailInput' type="email" name="email" required></input> <label>Message</label> 
-               <textarea type="text" name="message" required></textarea>
-               <div class="sbmtBtnWrap"><button type="submit" id="contactMeSubmitBtn"> Submit </button></div>
-         </section>
-         </form>
-         <div class="socialLinks">
-            <div>
-               <a href="https://www.linkedin.com/in/juan-cintron-73a184218/">
-                  <svg viewBox="0 0 128 128">
-                     <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path>
-                     <path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
-                  </svg>
-               </a>
-               <a href="https://github.com/jcintron82"><img class="githubIcon" src="./images/github.png"></a> 
-            </div>
-            <div><a href="#header" class="hideLinkPointers"><button id="toTopBtn" class="toTopBtn"> Back To Top </button></a></div>
-         </div>
-      </section>
-   </body>
-   <script src="script.js"></script>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Juan Cintron - Web Developer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/jgcintron82/" class="socialIcons">
+											<svg viewBox="0 0 128 128" style="width: 24px;">
+											<path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
+											</svg>
+										  </a></li>
+										<li><a href="https://github.com/jcintron82" class="socialIcons">
+											<svg viewBox="0 0 128 128" style="width: 24px;">
+											<g fill="#181616"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
+											</svg>
+										  </a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m Juan<br />
+											</h1>
+											<p>Web Developer</p>
+										</header>
+										<p>Whether looking to increase your online presence, hire a new dev for your team, or even just get someone to make that discord bot you've
+											always wanted; you're in the right place. I have experience working in both the front and back end with JavaScript and it's frameworks and runtimes
+											as my bread and butter. Take a look at some of my work and let's chat!
+										</p>
+										<ul class="actions">
+											<!-- <li><a href="#" class="button big">I need a website</a></li>
+											<li><a href="#" class="button big">I need a dev</a></li> -->
+											<!-- <li><a href="#projects" class="button big">My Work</a></li> -->
+											<br>
+										</ul>
+									</div>
+									<span class="imagewrap">
+										<img style="width: 100%; height: 100%; border-radius: 6px;" src="images/selfie.jpg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<!-- <section>
+									<header class="major">
+										<h2>Recent Client Work</h2>
+									</header>
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<div class="content">
+												<h3>Velgara Excavating</h3>
+												<p>Blurb</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<div class="content">
+												<h3>Velgara Excavating</h3>
+												<p>Blurb</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<div class="content">
+												<h3>Velgara Excavating</h3>
+												<p>Blurb</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<div class="content">
+												<h3>Velgara Excavating</h3>
+												<p>Blurb</p>
+											</div>
+										</article>
+									</div>
+								</section> -->
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Recent Personal Work</h2>
+										<!-- <p>Here you'll find my personal projects which give a good look into my work and the value I can bring to your development team. Work here tends to be varied although the common theme is a constant push for learning and personal growth.
+										</p> -->
+									</header>
+									<div class="posts">
+										<article id="projects">
+											<a href="https://github.com/jcintron82/Inventory-System" class="image"><img style="height: 13rem" src="images/dispo.avif" alt="Inventory system project image" /></a>
+											<h3 class="dispoh3">Dispensary Inventory Management System</h3>
+											<p style="margin-bottom: 2.5rem;"><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Node.js, Express, MongoDB<br>
+												<ul class="actions" style="padd">
+													<li><a href="https://bulletin-board.onrender.com/" class="button">Live Site<br>Coming Soon!</a></li>
+													<li><a href="https://github.com/jcintron82/Bulletin-Board" class="button">Source Code</a></li>
+												</ul>
+											<strong>(In-Progress)</strong>
+											
+											<br> An inventory system geared towards a dispensary although the structure is so the product(s) are easily changeable. The system allows authorized user to create, read, update and delete
+											items. Customers can use the system to view products as well as pricing and stock. </p>
+											<ul class="actions">
+											
+											</ul>
+										</article>
+										<article>
+											<a href="https://bulletin-board.onrender.com/" class="image"><img style="height: 13rem" src="images/board.avif" alt="Bulletin board project image" /></a>
+											<h3>Dev Bulletin Board</h3>
+											<p><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Node.js, Express
+											<ul class="actions">
+												<li><a href="https://bulletin-board.onrender.com/" class="button">Live Site</a></li>
+												<li><a href="https://github.com/jcintron82/Bulletin-Board" class="button">Source Code</a></li>
+											</ul>
+											
+											<p>An online bulletin board geared towards posting web development thoughts and news. Users fill out a form consisting of their name and message and it is posted 
+												to the bulletin board with a live time stamp. 
+											</p>
+											
+										</article>
+										<article>
+											<a href="https://magnolia-marketplace.vercel.app/home" class="image"><img style="height: 13rem" src="images/magnolia.avif" alt="Magnolia marketplace application image" /></a>
+											<h3>Magnolia Marketplace</h3>
+											
+											<p><strong>Tech Stack: </strong>HTML, CSS, JavaScript, React.js
+												<ul class="actions">
+													<li><a href="https://magnolia-marketplace.vercel.app/home" class="button">Live Site</a></li>
+													<li><a href="https://github.com/jcintron82/Magnolia-Marketplace" class="button">Source Code</a></li>
+												</ul>
+											<p>An ECommerce app which users can browse products and add selected products to their cart. Users have the ability to create orders, add items, update quantities and delete items. The cart page features totals displayed to the user to include a calculated tax amount.</p>
+											
+										</article>
+										<article>
+											<a href="https://jcintron82.github.io/Memory-Game/" class="image"><img style="height: 13rem" src="images/casino.avif" alt="Casino Royale Matching game iamge" /></a>
+											<h3>Casino Royale Matching Game</h3>
+											
+											<strong>Tech Stack: </strong>HTML, CSS, JavaScript, React.js<br>
+											<br>
+											<ul class="actions">
+												<li><a href="https://jcintron82.github.io/Memory-Game/" class="button">Live Site</a></li>
+												<li><a href="https://github.com/jcintron82/Memory-Game" class="button">Source Code</a></li>
+											</ul>
+											<p>A whimsical memory matching game which has the added effect of having a slot machine roll happen when a new high score is reached. </p>
+											
+										</article>
+										<article>
+											<a href="https://jcintron82.github.io/Weather-app/" class="image"><img style="height: 13rem" src="images/weather.avif" alt="An image of a weather application" /></a>
+											<h3>Weather App</h3>
+											<strong>Tech Stack: </strong>HTML, CSS, JavaScript, React.js<br>
+											<br>
+											<ul class="actions">
+												<li><a href="https://jcintron82.github.io/Weather-app/" class="button">Live Site</a></li>
+												<li><a href="https://github.com/jcintron82/Weather-app" class="button">Source Code</a></li>
+											</ul>
+											<p>A forecasting application which allows users to input any location around the globe and get the current and 5 day weather data. </p>
+											
+										</article>
+										<article>
+											<a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/" class="image"><img style="height: 13rem" src="images/gc.avif" alt="An image of a food truck" /></a>
+											<h3>Grilled Cheesus</h3>
+											<strong>Tech Stack: </strong>HTML, CSS, JavaScript, Webpack<br>
+											<br>
+											<ul class="actions">
+												<li><a href="https://jcintron82.github.io/Grilled-Cheesus-Food-Truck-/" class="button">Live Site</a></li>
+												<li><a href="https://github.com/jcintron82/Grilled-Cheesus-Food-Truck-" class="button">Source Code</a></li>
+											</ul>
+											<p>A landing and menu page mockup for a grilled cheese focused food truck called Grilled Cheesus. </p>
+										
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<!-- <section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+							<!-- Menu -->
+								<!-- <nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav> -->
+
+							<!-- Section -->
+								<!-- <section>
+									<header class="major">
+										<h2>Recent Client Work</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<strong>Velgara Excavating</strong>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<strong>Velgara Excavating</strong>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<strong>Velgara Excavating</strong>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section> -->
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact me</h2>
+									</header>
+									<!-- <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+									<ul class="contact">
+										<!-- <li class="icon solid fa-envelope"><a href="#">j.g.cintron2@gmail.com</a></li> -->
+									</ul>
+									<form class="contactmeform" action="https://formspree.io/f/xdojgvzv" method="POST">
+										<label>
+										</label><input name="Name" required type="text" minlength=3 maxlength=25 placeholder="Name">
+										<label>
+										</label><input name="Email" required type="email" placeholder="E-Mail">
+										<label>
+										</label><textarea name="Message" style="max-width: 20rem;" required placeholder="Message..."></textarea>
+										<button style="align-self: flex-start;" type="submit">Submit</button>
+									</form>
+								</section>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
