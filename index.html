@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/addedcss.css" />
 	</head>
 	<body class="is-preload">
 
@@ -50,9 +51,9 @@
 											as my bread and butter. Take a look at some of my work and let's chat!
 										</p>
 										<ul class="actions">
-											<!-- <li><a href="#" class="button big">I need a website</a></li>
-											<li><a href="#" class="button big">I need a dev</a></li> -->
-											<!-- <li><a href="#projects" class="button big">My Work</a></li> -->
+											<li><a href="#" class="button big">I need a website</a></li>
+											<li><a href="#projectsblurb" class="button big">I need a dev</a></li>
+											
 											<br>
 										</ul>
 									</div>
@@ -101,18 +102,19 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Recent Personal Work</h2>
-										<!-- <p>Here you'll find my personal projects which give a good look into my work and the value I can bring to your development team. Work here tends to be varied although the common theme is a constant push for learning and personal growth.
-										</p> -->
+										<h2 id="projectsblurb">Recent Personal Work</h2>
+										<p>My recent pet projects, if you want to know who I am as a developer, this is it. You'll generally find whatever I'm finding interesting
+											at the given moment but most applications are Full-Stack.
+										</p>
 									</header>
 									<div class="posts">
-										<article id="projects">
+										<article id="projects" class="">
 											<a href="https://github.com/jcintron82/Inventory-System" class="image"><img style="height: 13rem" src="images/dispo.avif" alt="Inventory system project image" /></a>
-											<h3 class="dispoh3">Dispensary Inventory Management System</h3>
+											<h3 class="dispoh3">Aphria Inventory Management System</h3>
 											<p style="margin-bottom: 2.5rem;"><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Node.js, Express, MongoDB<br>
 												<ul class="actions" style="padd">
-													<li><a href="https://bulletin-board.onrender.com/" class="button">Live Site<br>Coming Soon!</a></li>
-													<li><a href="https://github.com/jcintron82/Bulletin-Board" class="button">Source Code</a></li>
+													<li><a href="#" class="button">Live Site<br>Coming Soon!</a></li>
+													<li><a href="https://github.com/jcintron82/Inventory-System" class="button">Source Code</a></li>
 												</ul>
 											<strong>(In-Progress)</strong>
 											
@@ -122,9 +124,9 @@
 											
 											</ul>
 										</article>
-										<article>
+										<article class="x">
 											<a href="https://bulletin-board.onrender.com/" class="image"><img style="height: 13rem" src="images/board.avif" alt="Bulletin board project image" /></a>
-											<h3>Dev Bulletin Board</h3>
+											<h3>PostIt! Dev Bulletin Board</h3>
 											<p><strong>Tech Stack: </strong>HTML, CSS, JavaScript, Node.js, Express
 											<ul class="actions">
 												<li><a href="https://bulletin-board.onrender.com/" class="button">Live Site</a></li>
@@ -238,20 +240,41 @@
 								</nav> -->
 
 							<!-- Section -->
-								<!-- <section>
-									<header class="major">
+								<section id="clientsection"  class="clientsection">
+									 <header class="major">
 										<h2>Recent Client Work</h2>
 									</header>
 									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+										<article class="clientworkdivs">
+											
 											<strong>Velgara Excavating</strong>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<p>A landing page for a family owned excavation company. Focusing on simplicity
+												and delivering value in a sleek manner.
+											</p>
+											<a href="https://velgara-excavating.vercel.app/" class="image"><img src="images/oncliff.avif" alt="A screenshot of the website for the company Velgara Excavating" /></a>
+											<ul class="actions">
+												<li><a href="https://velgara-excavating.vercel.app/" class="button">View</a></li>
+											</ul>
 										</article>
-										<article>
+										<!-- <div class="mini-posts">
+											<article class="clientworkdivs">
+												
+												<strong>Velgara Excavating</strong>
+												<p>A landing page for a family owned excavation company. Focusing on simplicity
+													and delivering value in a sleek manner.
+												</p>
+												<a href="https://velgara-excavating.vercel.app/" class="image"><img src="images/oncliff.avif" alt="A screenshot of the website for the company Velgara Excavating" /></a>
+												<ul class="actions">
+													<li><a href="https://velgara-excavating.vercel.app/" class="button">View</a></li>
+												</ul>
+											</article> -->
+										<!-- <article>
 											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
 											<strong>Velgara Excavating</strong>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<ul class="actions">
+												<li><a href="https://jcintron82.github.io/Memory-Game/" class="button">Live Site</a></li>
+											</ul>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
@@ -261,8 +284,8 @@
 									</div>
 									<ul class="actions">
 										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section> -->
+									</ul> -->
+								</section> 
 
 							<!-- Section -->
 								<section>
@@ -295,6 +318,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/observer.js"></script>
 
 	</body>
 </html>
