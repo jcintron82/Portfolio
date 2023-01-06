@@ -1887,7 +1887,7 @@ button,
     margin: 0 auto;
     max-width: 110em; }
     #main > .inner > section {
-      padding: 6em 0 4em 0 ;
+      padding: 6em 0 15vh 0 ;
       border-top: solid 2px rgba(210, 215, 217, 0.75); }
       #main > .inner > section:first-of-type {
         border-top: 0 !important; }
@@ -2142,7 +2142,7 @@ button,
 
 /* Banner */
 #banner {
-  padding: 6em 0 4em 0 ;
+  padding: 6em 0 10em 0 ;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
