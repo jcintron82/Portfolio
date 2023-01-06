@@ -1,8 +1,32 @@
- .hide{
+@keyframes fade{
+    0%{opacity: 1;}
+    100%{opacity: 0;;}
+}
+.hide{
     display: none;
+    animation: fade;
+    transition: ease;
+    max-height: 0;
 }
 .sidebarout{
     display: flex;
     justify-content: center;
-    width: 70vw;
+    width: 50em;
+}
+.contactmewrap {
+    position: fixed;
+    width: 21vw;
+    max-width: 13rem;
+}
+.needawebsitebtndesktop{
+    display: none;
+}
+
+@media(min-width:1024px){
+    .needawebsitebtnmobile{
+        display: none;
+    }
+    .needawebsitebtndesktop{
+        display: block;
+    }
 }
