@@ -2,6 +2,9 @@
     0%{opacity: 1;}
     100%{opacity: 0;;}
 }
+p{
+    font-size: 1.25em;
+}
 .hide{
     display: none;
     animation: fade;
@@ -21,12 +24,44 @@
 .needawebsitebtndesktop{
     display: none;
 }
-
-@media(min-width:1024px){
+.clientworktitles{
+    font-size: 1.5em;
+}
+.contactmeheadermobile{
+    margin-bottom: 0;
+    padding: 0;
+}
+.majormobile{
+    border-bottom: solid 3px #f56a6a;
+    display: inline-block;
+    margin: 0 0 0em 0;
+    padding: 0 0.75em 0.5em 0;
+}
+.uparrow{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: black;
+    border-style: solid;
+    border-color: transparent;
+}
+a:visited{
+    color: black;
+}
+@media(min-width:1280px){
     .needawebsitebtnmobile{
         display: none;
     }
     .needawebsitebtndesktop{
         display: block;
+    }
+    .majormobile{
+        display: none;
+    }
+    .contactmeheadermobile{
+        display: none;
+    }
+    .mobilecontact{
+        display: none;
     }
 }

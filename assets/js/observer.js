@@ -3,6 +3,7 @@ const posts = document.querySelector('#inprogresswrap');
 const clientdivs = document.querySelectorAll('#clientsection')
 const selfie = document.querySelector('#selfie')
 const sidebar = document.querySelector('#sidebar')
+const uparrow = document.querySelectorAll('#uparrow')
 // const speed = 300;
 
 const observerOptions ={ 
@@ -52,4 +53,8 @@ const observerUp = new IntersectionObserver((entries, observer ) => {
 document.getElementById('needawebsitebtndesktop').addEventListener('click',() => {
     sidebar.classList.toggle('#sidebar')
     sidebar.className = ('sidebarout')
+})
+
+uparrow.addEventListener('click', () => {
+    alert('f')
 })

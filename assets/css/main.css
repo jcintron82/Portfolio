@@ -115,14 +115,15 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
-  color: #f56a6a;
+  /* border-bottom: dotted 1px; */
+  /* color: #f56a6a; */
   text-decoration: none; }
-  a:hover {
+  /* a:hover {
     border-bottom-color: #f56a6a;
-    color: #f56a6a !important; }
+    color: #f56a6a !important; } */
     a:hover strong {
-      color: inherit; }
+      color: inherit;
+    border-bottom: none; }
 
 strong, b {
   color: #3d4449;
