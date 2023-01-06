@@ -1,81 +1,53 @@
 const  x= document.getElementById('aboutUsImgtext');
-const counters = document.querySelectorAll('.clientsection');
-const img = document.querySelector('abousUsWrapImg')
+const posts = document.querySelector('#inprogresswrap');
+const clientdivs = document.querySelectorAll('.mini-posts')
+const selfie = document.querySelector('#selfie')
 // const speed = 300;
 
-const observerOptionsNumbers ={ 
+const observerOptions ={ 
     root:null,
     threshold: 1.0,
-    // root:document.getElementById('familyimg')
+    // rootMargin:document.getElementById('familyimg')
     
 }
-const observerOptionsAboutUs ={ 
-    threshold: .1,
-    rootMargin: '-10px 0px -0px 0px'
- 
-
-}
-
- const func = () => counters.forEach(counter => {
-    const hideElements = () => {
-        // const target = +counter.getAttribute('data-target');
-        // const count = +counter.innerText;
-        // const increment = 1;
-        counters.classList.toggle('hide')
-        
-    }
-    hideElements();
-    
+//Observes the personal projects to hide the client work on scroll down
+ const hide = () => clientdivs.forEach(div => {
+    div.className = ('hide') 
 })
-const hide = () => {
-    counters.classList.toggle('hide')
-}
-//  Function which adds clasS(opacity) and other CSS styles when element is in view
-const numcountObserver = new IntersectionObserver((entries, numcountObserver ) => {
+
+const observer = new IntersectionObserver((entries, observer ) => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
-
         console.log(entry.target)
-        // entry.target.classList.toggle('aboutUsBtnWrapScroll');
-        func()
-        // numcountObserver.unobserve(entry.target);
-        }
-      
+        hide()
+        }     
     })
     
    }
- , observerOptionsNumbers)
+ , observerOptions) 
 
- counters.forEach(counters => numcountObserver.observe(counters));
+ observer.observe(posts);
 
+//  Observes the name intro to re-display client work on scroll up
+ const show = () => clientdivs.forEach(div => {
+    div.className = ('mini-posts') 
+})
+
+const observerUp = new IntersectionObserver((entries, observer ) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+        console.log(entry.target)
+        show()
+        }     
+    })
+    
+   }
+ , observerOptions) 
+
+ observerUp.observe(selfie)
  
-//  const secondNumObserver = new IntersectionObserver((entries, numcountObserver ) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting){
-//             setTimeout(() => {
-//                 entry.target.innerText = 0;
-//         console.log(entry.target)
-//         // entry.target.classList.toggle('aboutUsBtnWrapScroll');
-//         secondNum()
-//         numcountObserver.unobserve(entry.target);
-//             }, 1000);
-//         }
-      
-//     })
-    
-//    }
-//  , observerOptionsNumbers)
 
- //Observer for the image at the bottom of the homepage
-//  const observer = new IntersectionObserver((entries, observer ) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting){
-//         console.log(entry.target)
-//         entry.target.classList.toggle('aboutUsBtnWrapScroll')}
-//         // entry.target.className = 'aboutUsBtnWrapScroll' }
-    
-//     })
-//    }
-//  , observerOptionsAboutUs)
-
-//  observer.observe(x);
+//Event listeners for buttons
+document.getElementById('needawebsitebtn').addEventListener('click',() => {
+    document.getElementById('sidebar').classList.toggle('sidebarout');
+})
