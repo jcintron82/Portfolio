@@ -54,7 +54,3 @@ document.getElementById('needawebsitebtndesktop').addEventListener('click',() =>
     sidebar.classList.toggle('#sidebar')
     sidebar.className = ('sidebarout')
 })
-
-uparrow.addEventListener('click', () => {
-    alert('f')
-})
