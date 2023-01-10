@@ -80,9 +80,8 @@ a:visited{
     justify-content: center;
 }
 .mini-posts{
-    height: 120vh;
+    height: 100%;
 }
-
 @media(min-width:1280px){
     .needawebsitebtnmobile{
         display: none;

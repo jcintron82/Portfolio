@@ -1094,11 +1094,12 @@ input[type="search"],
 input[type="url"],
 select {
   height: 2.75em;
-width: 100%; }
+width: 100%;
+ }
 
 textarea {
   padding: 0.75em 1em; 
-width: 1vw;}
+}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -1963,7 +1964,8 @@ button,
   background-color: #f5f6f7;
   font-size: 0.9em;
   position: relative;
-  width: 26em; }
+  width: 26em; 
+}
   #sidebar h2 {
     font-size: 1.38889em; }
   #sidebar > .inner {
