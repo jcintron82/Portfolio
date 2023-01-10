@@ -72,6 +72,9 @@ a:visited{
     
 
 }
+.mini-posts{
+    height: 100vh;
+}
 @media(min-width:1280px){
     .needawebsitebtnmobile{
         display: none;
