@@ -85,6 +85,9 @@ a:visited{
     .contactmeheadermobile{
         display: none;
     }
+    .contactmeformmobile{
+        display: none;
+    }
     .mobilecontact{
         display: none;
     }
